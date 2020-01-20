@@ -1,84 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/CompetitionQ/AdventureLand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/backtracking/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/backtracking/KSwaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/backtracking/RatMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/LevelOrderConstructBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/SmallerOnRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/minDiff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/disjoint_sets/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/disjoint_sets/GraphDSU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/disjoint_sets/NoOfConnectedComponents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/coinChange1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/coinChange2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/eggDrop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/fibBottomUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/fibTopDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/gameStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/kadanes1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/kadanes2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/knapsack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/longCommSubseq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/longIncSubseq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/maxSumSubArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/minJumps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/sticklerThief.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/sumOfSubstrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/uniqPaths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToReachNthStair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToReachNthStair2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToWriteSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/ArticulationPoints.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/KosarajuSCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/KruskalAlgo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/TarjansSCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/IfPathExists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/Islands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/ModelGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/WeightedModelGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/cycleInDirected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/cycleInUnDirected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/minKSwaps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/greedy/ActivitySelection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/greedy/HuffmanDecoding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/greedy/MinPlatforms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/greedy/MinRoomsRequired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/hashing/linearProbing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/hashing/separateChaining.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/KMostOccurring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/KthLargest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/KthLargest_InAStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/MedianInAStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/MedianSortedArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/MinCostOfRopes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/MinHeap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/NearlySorted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/heaps/RearrangeChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/matrix/beautifulMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/matrix/matrixRotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/matrix/snakePattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/matrix/spiralMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/matrix/sumUpperLowerTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/searching/medianOfMergedArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/searching/medianOfSortedArraysEfficient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/segment_tree/SegmentTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/sorting/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/sorting/rearrangeAlternate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/string/Anagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/tree/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/tree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToDLL.java" afterDir="false" />
-    </list>
+    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,66 +12,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HuffmanDecoding.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/greedy/HuffmanDecoding.java">
+      <file leaf-file-name="reverseInteger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/reverseInteger.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="LevelOrderConstructBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/LevelOrderConstructBST.java">
+      <file leaf-file-name="Kadane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/Kadane.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="MinCostOfRopes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/heaps/MinCostOfRopes.java">
+      <file leaf-file-name="power.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/power.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="beautifulMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/matrix/beautifulMatrix.java">
+      <file leaf-file-name="MaxXor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trie/MaxXor.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="TreeToCDDL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java">
+      <file leaf-file-name="arrayLeader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/arrayLeader.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="minDiff.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/minDiff.java">
+      <file leaf-file-name="palindrome.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/palindrome.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="MinPlatforms.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/greedy/MinPlatforms.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="WeightedModelGraph.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/WeightedModelGraph.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="linearProbing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/hashing/linearProbing.java">
+      <file leaf-file-name="Trie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trie/Trie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TarjansSCC.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/TarjansSCC.java">
+      <file leaf-file-name="grayCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/grayCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
-              <folding>
-                <element signature="e#2514#2545#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeToCDDL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-400">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/BST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-181">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -231,142 +156,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="binarySearchTree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="CompetitionQ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="disjoint_sets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic_Programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graphAdvanced" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="greedy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hashing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="heaps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="searching" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="segment_tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sorting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,6 +171,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 2.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="" />
@@ -393,6 +184,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/interviewBit/src/main/java" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -408,7 +200,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.minDiff">
+    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binarySearchTree.BST" />
+      <module name="interviewBit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="TarjansSCC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="graphAdvanced.TarjansSCC" />
       <module name="interviewBit" />
@@ -422,6 +225,17 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="minDiff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binarySearchTree.minDiff" />
+      <module name="interviewBit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="binarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -438,6 +252,43 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration name="python_utility" type="Python.AppEngineServer" factoryName="App Engine server">
+      <module name="python_utility" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="host" value="127.0.0.1" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+    </configuration>
+    <configuration name="python_utility" type="Python.DjangoServer" factoryName="Django server">
+      <module name="python_utility" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -461,8 +312,17 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.TarjansSCC" />
+      <item itemvalue="Django server.python_utility" />
+      <item itemvalue="App Engine server.python_utility" />
+      <item itemvalue="Application.BST" />
+      <item itemvalue="Application.minDiff" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.minDiff" />
+        <item itemvalue="Application.BST" />
         <item itemvalue="Application.TarjansSCC" />
       </list>
     </recent_temporary>
@@ -478,28 +338,29 @@
       <option name="presentableId" value="Default" />
       <updated>1579507459278</updated>
       <workItem from="1579507462707" duration="295000" />
-      <workItem from="1579507836623" duration="402000" />
+      <workItem from="1579507836623" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="697000" />
+    <option name="totallyTimeSpent" value="1516000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="815" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37047353" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32960895" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
@@ -556,9 +417,6 @@
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/matrix/beautifulMatrix.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/minDiff.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -581,10 +439,68 @@
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/TarjansSCC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
-          <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
           <folding>
             <element signature="e#2514#2545#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trappingRainWater.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trie/RenameCity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/swapBits.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dsa.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/reverseInteger.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/Kadane.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/power.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trie/MaxXor.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/arrayLeader.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/palindrome.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trie/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/grayCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>

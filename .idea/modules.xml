@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DataStructures-Algorithms.iml" filepath="$PROJECT_DIR$/.idea/DataStructures-Algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/interviewBit/interviewBit.iml" filepath="$PROJECT_DIR$/interviewBit/interviewBit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/python_utility/python_utility.iml" filepath="$PROJECT_DIR$/python_utility/python_utility.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,34 @@
+/usr/bin/python2.7 /Users/bharti.singh/hellopython/iaasUtils/multiUploadD42.py
+uploading part 1 of 23
+uploading part 2 of 23
+uploading part 3 of 23
+uploading part 4 of 23
+uploading part 5 of 23
+uploading part 6 of 23
+uploading part 7 of 23
+uploading part 8 of 23
+uploading part 9 of 23
+uploading part 10 of 23
+uploading part 11 of 23
+uploading part 12 of 23
+uploading part 13 of 23
+uploading part 14 of 23
+uploading part 15 of 23
+uploading part 16 of 23
+uploading part 17 of 23
+uploading part 18 of 23
+uploading part 19 of 23
+uploading part 20 of 23
+uploading part 21 of 23
+uploading part 22 of 23
+uploading part 23 of 23
+upload_file done
+neo_databases_backup.sql.gz	6989503847	2019-07-18T07:28:10.000Z
+ads-webserve-backup	2019-06-12T12:18:40.000Z
+cm-backup-01-03-2018	2018-03-21T09:24:26.000Z
+cm-backup-10-09-2018	2018-09-10T11:50:23.000Z
+database_backups	2019-07-17T18:17:55.000Z
+mybucket	2018-09-11T09:22:14.000Z
+neodatabase_archive	2019-07-18T07:13:26.000Z
+
+Process finished with exit code 0
