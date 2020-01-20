@@ -1,0 +1,108 @@
+IAAS COMMANDS
+
+ssh iaas-cli-0001.ch.flipkart.com
+-----------------------------------------------------------------------------------------------------------------------------------------------
+HYD-DC-HELIOS vpc
+Hyd -vpc
+
+2) ADD NEW INSTANCE GROUP
+kloud-cli --zone=in-hyderabad-1 instanceGroup create --template=hyd-template-new --size=2 --reservationId 5997 --name=hdb-dn --user=flap-infra --appId=m3-demand-helios-hbase   --password flap-infra --vpc Fk-Helios
+
+1) CREATE INSTANCE TEMPLATE
+kloud-cli --zone=in-hyderabad-1 instanceTemplate --appId=m3-demand-helios-hbase create  --name=hyd-template-new --type=oc2-8.m24.h24 --users=users.txt  --script=hbase_hyd.sh    --user=flap-infra --password flap-infra --image  debian-8-guest
+
+3) Resize -
+kloud-cli --zone=in-hyderabad-1 instanceGroup --appId=m3-demand-helios-hbase  resize --size=0  --name=hyd-dn  --user=flap-infra --password flap-infra --reservationId 5997
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+3) RESIZE
+kloud-cli --zone=in-chennai-1 instanceGroup --appId=m3-demand-helios-hbase  resize --size=3  --name=helios-dn-hbase  --user=flap-infra --password flap-infra --reservationId 77544
+
+2) ADD NEW INSTANCE GROUP
+kloud-cli --zone=in-chennai-1 instanceGroup create --template=template-final --size=1 --reservationId 77544 --name=helios-dn-new --user=flap-infra --appId=m3-demand-helios-hbase   --password flap-infra
+
+1) CREATE INSTANCE TEMPLATE
+kloud-cli --zone=in-chennai-1 instanceTemplate --appId=m3-demand-helios-hbase create  --name=template-final --type=c1-4.m16.h24 --users=users.txt  --script=hbase_helios.sh   --user=flap-infra --password flap-infra --image  debian-8-guest
+
+--image  debian-7.8.0-guest
+--image  debian-8-guest
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+STOP INSTANCE
+kloud-cli --zone=in-chennai-1 instance --appId fk-ads-stage-common stop --instanceId 439005 --user=flap-infra --password flap-infra
+
+1) ABANDON INSTANCE FROM IG
+kloud-cli --zone=in-chennai-1 instanceGroup abandon --appId m3-demand-helios-hbase  --instances=1435141  --name=helios-dn-hbase --user=flap-infra   --password flap-infra
+
+2) DESTROY INSTANCE
+kloud-cli --zone=in-chennai-1 instance --appId m3-demand-helios-hbase  destroy --instanceId=1435141  --user=flap-infra --password flap-infra
+
+3) DESTROY INSTANCE GROUP
+kloud-cli --zone=in-chennai-1 instanceGroup destroy --appId=m3-demand-nps  --name=d9-prod  --user=flap-infra --password flap-infra
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) INSTANCE CREATE
+kloud-cli --zone=in-chennai-1 instance create --appId=m3-demand-helios-hbase  --reservationId 77544  --type=c1-4.m16.h24 --users=users.txt --script=hbase_helios.sh --user=flap-infra --password flap-infra  --image  debian-8-guest
+
+5)START
+kloud-cli --zone=in-chennai-1 instance --appId=m3-trinity-demand-ingestor start --instanceId=1285223  --user=flap-infra --password flap-infra
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+ADD IG BEHIND ELB
+elb-cli vip -z in-chennai-1 add backend -v 10.47.7.132  -f 80 -g prod-new
+
+Create ELB
+elb-cli -z in-chennai-1 vip create http -a fk-m3-targeting -g prod -s REGIONAL -n targeting-prod-elb -b 19090 -p /healthcheck
+
+elb-cli -z in-chennai-1 vip create http -a fk-mm-hazelcast-preprod -g preprod-d9 -s REGIONAL -n hazelcast-preprod-elb -b 8085 -p /healthcheck
+
+
+Describe VIP
+elb-cli -z in-chennai-1 vip describe -v 10.47.5.113
+elb-cli -z in-chennai-1 vip describe -v 10.47.2.71
+
+List ELB
+elb-cli -z in-chennai-1 vip list -a m3-bcap-tapering
+
+delete ELB
+elb-cli -z in-chennai-1 vip delete -v 10.47.6.173
+
+describe-appid
+elb-cli app --app <APP-ID> backendService show -z in-chennai-1
+
+HealthCheck - 10.34.177.43:57000/elb-healthcheck
+-------------------------------------------------------------------------------------------------------------------------------------------------
+/usr/lib/nagios/fk-nagios-common/thresholds/system_alerts.conf
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Noah backup restore steps -
+1) Log on to iaas-cli-0001.ch.flipkart.com
+2) Run this command to get list of configs for your app id in case you don't remember your Noah config name.
+		noah config list -a m3-demand-infra | jq .
+3) Run these commands to get s3backup.ini and braas.ini using Noah config name.
+		noah config getini --zone prod -n Authz_mysql_slave_backUp --ini_file s3backup
+		noah config getini --zone prod -n Authz_mysql_slave_backUp --ini_file braas
+
+		1340028__mysql__2019-04-03__18-35-00__full
+		/usr/bin/mysqlbackup.sh restore 1340028__mysql__2019-04-03__18-35-00__full
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+scp Gohan-1.0-SNAPSHOT.jar bharti.singh@10.34.125.51:/home/bharti.singh/
+
+hdfs dfs -copyToLocal hdfs://krios/projects/fk-ads-supply/fk-ads-forecasting/output/spark-2.1/spark-2.1.1 .
+copy folder to /usr/share/
+cd sbin
+sudo bash ./start-slave.sh spark://10.33.22.76:7077
+
+sh /usr/lib/zookeeper/bin/zkCli.sh
+sh /usr/local/Cellar/zookeeper/3.4.13/bin/zkCli
+———————————————————————————————————————————————————————————————————————————
+sudo systemctl daemon-reload
+sudo systemctl enable fk-m3-kafka-manager.service
+sudo systemctl start fk-m3-kafka-manager.service
+——————————————————————————————————————————————————————————————————————————
+

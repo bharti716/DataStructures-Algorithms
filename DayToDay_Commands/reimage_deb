@@ -1,0 +1,37 @@
+Re-image VM  to Deb9
+
+Steps (mysql machine)
+1. Abandon instance
+2. Check entry in /etc/fstab
+3. Stop slave
+4. Stop mysql  :  mysqladmin -uroot shutdown -p
+5. Stop VM
+6. kloud-cli --zone=in-chennai-1 instance reimage --appId fk-mnm-cm --instanceId=1547594 --image=debian-9-guest --update-script reimage-mysql.sh --user=flap-infra --password flap-infra
+7. Just include percona packages in script
+8. Once VM is recreated
+    1. Create files - /etc/mysql/conf.d/flipkart.cnf and server.cnf
+    2. Execute : vgchange -a y ; lvdisplay
+			#!/bin/bash
+			mkdir -p /var/lib/mysql
+			mount -t xfs  /dev/vgmysql/lv_mysqldata /var/lib/mysql
+			chown -R mysql:mysql /var/lib/mysql
+
+			mkdir -p /var/tmp/mysql
+			mount -t xfs /dev/vgmysql/lv_mysqltmp /var/tmp/mysql
+			chown -R mysql:mysql /var/tmp/mysql
+
+			mkdir -p /var/log/mysql
+			mount -t xfs /dev/vgmysql/lv_mysqllog /var/log/mysql
+			chown -R mysql:mysql /var/log/mysql
+
+			echo "/dev/vgmysql/lv_mysqldata /var/lib/mysql xfs defaults,noatime 0 0" >> /etc/fstab
+			echo "/dev/vgmysql/lv_mysqllog /var/log/mysql xfs defaults,noatime 0 0" >> /etc/fstab
+			echo "/dev/vgmysql/lv_mysqltmp /var/tmp/mysql xfs defaults,noatime 0 0" >> /etc/fstab
+
+			chown mysql:mysql /var/log/mysql
+			chown mysql:mysql /var/tmp/mysql
+			chown mysql:mysql /var/lib/mysql
+	3. Execute -  /etc/init.d/mysql stop
+			      /etc/init.d/mysql/start
+	4. Login to mysql ; start slave ; show slave status \G ;
+	5. iostat 2

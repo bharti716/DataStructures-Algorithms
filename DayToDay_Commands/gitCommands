@@ -1,0 +1,33 @@
+Git Commands
+1. git rev-parse --abbrev-ref HEAD
+2. git rm -r --cached .idea/
+3. git clean -f -d (Remove untracked directories in addition to untracked files)
+4. git reset --hard
+5. git push --set-upstream origin AzkabanJob_MissingViewNames_InHazelMaps
+6. gl ; git reset --hard HEAD~1
+7. git merge master --strategy theirs
+8. git merge --abort
+9. git config --global user.email "you@example.com"
+
+
+Git branch banner_cleanup (branch name)
+2) git checkout banner_cleanup(branch name)
+3) add file to folder
+4) git add scripts/shell/bannerCleanUp.sh
+5) git status
+6) git commit -m " comments "
+7) git push origin banner_cleanup
+
+git checkout master
+git pull origin master
+git checkout branch_name
+git merge master
+
+
+8) go to UI for Pull request
+9) get it reviewed
+10) merge master
+
+
+Git WorkInProgress Branch
+1. new_api_zoneGroupCreation

@@ -1,0 +1,144 @@
+Code-Snippets
+Editing the file :
+/lib/lsb/init-functions.d/40-systemd
+Add :
+export _SYSTEMCTL_SKIP_REDIRECT=true  Deb 8
+export SYSTEMCTL_SKIP_REDIRECT=true Deb 9
+
+
+E.g:
+>> cat   /lib/lsb/init-functions.d/40-systemd | head -5
+# -*-Shell-script-*-
+# /lib/lsb/init-functions
+
+_use_systemctl=0
+export SYSTEMCTL_SKIP_REDIRECT=true
+
+——————————————————————————————————————————————————————————————————————————
+
+SELECT
+   table_name AS 'Table',
+   round(((data_length) / 1024 / 1024 / 1024), 3) 'DATA in GB',
+   round(((index_length) / 1024 / 1024 / 1024), 3) 'INDEX in GB' ,
+   round(((data_length + index_length) / 1024 / 1024 / 1024), 3) 'Size in GB',
+   round(((data_free) / 1024 / 1024 / 1024), 3) 'Free in GB',
+   round(((data_length + index_length + data_free) / 1024 / 1024 / 1024), 3) 'TOTAL'
+FROM information_schema.TABLES where table_schema = "slice_dice_azkaban" ORDER BY data_free DESC
+
+
+———————————————————————————————————————————————————————————————————————
+
+SELECT
+    CONCAT
+    (
+      '{"channels":',  ltcm.string  , ','
+      '"zone_count":'   , lt.zone_count   , ','
+      '"name":', '"', lt.name, '"', ','
+      '"widget_type":', '"', lt.widget_type, '"', ','
+      '"state":',CAST(lt.state AS UNSIGNED), ','
+      '"attributes":',  lt.attributes  , '}'
+
+    ) json
+  FROM layout_template lt ,
+  (select layout_template_id,concat('[',group_concat('"',channel,'"' separator ','),']' ) as string from layout_template_channel_mapping GROUP BY layout_template_id ) ltcm
+  where lt.id = ltcm.layout_template_id ;
+
+———————————————————————————————————————————————————————————————————————————————
+
+@Test
+public void getBanner() throws Exception {
+    ConfigParser<TopologyConfig> parser = new ConfigParser<>(TopologyConfig.class);
+    TopologyConfig topologyConfigproduction = parser.parseConfiguration("config/prod/config.yaml");
+
+    HazelcastInstance hazelcastInstance = HazelcastClient.newHazelcastClient(topologyConfigproduction.getHazelcastConfig().getHazelcastInstanceConfig());
+    IMap<String, Banner> map = hazelcastInstance.getMap("bannerMap");
+
+    long start = System.currentTimeMillis();
+
+    long total = map.keySet()
+            .parallelStream()
+            .filter(id -> {
+                Banner banner = map.get(id);
+                if (null != banner) {
+                    return banner.getDomain() == Domain.EMERALD;
+                }
+                return false;
+            })
+            .count();
+
+    long end = System.currentTimeMillis();
+    System.out.println("Total count is :" + total + " took " + (end - start) + "ms");
+}
+
+——————————————————————————————————————————————————————————————————————————————————
+
+private static List<CompletableFuture<Pair<String, Long>>> prepareMapCountCompletableFutureList(ExecutorService executorService, HazelcastInstance hazelcastInstance, Long timestamp) {
+    IMap<String, BaseEntity> mapName;
+    List<CompletableFuture<Pair<String, Long>>> pendingResults = new ArrayList<>();
+
+
+    for (HazelcastMaps hazelcastMap : HazelcastMaps.values()) {
+        final String projectionName = hazelcastMap.getProjectionName() ;
+        System.out.println("Prod Map : " + projectionName + " Size : " + hazelcastInstance.getMap(hazelcastMap.getProjectionName()).size());
+
+        mapName = hazelcastInstance.getMap(hazelcastMap.getProjectionName()) ;
+
+        Future<Pair<String, Long>> submit = executorService.submit(new HazelcastMapLookUpCallableTask(mapName, timestamp, projectionName));
+        CompletableFuture<Pair<String, Long>> pendingAction = CompletableFuture.supplyAsync(() -> {
+            try {
+                return submit.get();
+            } catch (Exception e) {
+                e.printStackTrace();
+                return new Pair<>(projectionName, -1L);
+            }
+        });
+        pendingResults.add(pendingAction);
+    }
+    return pendingResults;
+}
+
+——————————————————————————————————————————————————————————————————————————————————————————
+
+#!/usr/bin/env bash
+if [ -f /proc/$(cat /home/bharti.singh/consumer.pid)/exe ]; then
+    echo "Previous process is already running."
+    exit 1
+fi
+
+nohup /usr/lib/jvm/jdk-8-oracle-x64/bin/java -XX:+PrintCommandLineFlags -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=9003 -Xms20480M -Xmx28672M -verbose:gc -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -XX:+PrintTenuringDistribution -Xloggc:/var/log/flipkart/fk-ingestion-v2/gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=2 -XX:GCLogFileSize=128M  -cp .:Gohan-1.0-SNAPSHOT.jar com.flipkart.ingestionV2.Application  1>/dev/null 2>error.txt &
+
+echo $!>/home/bharti.singh/consumer.pid
+———————————————————————————————————————————————————————————————————————————————————————————
+
+apt-get install lvm2
+sudo apt-get install xfsprogs
+sudo cat /etc/sudoers.d/iaas
+sudo su
+    1  vgcreate vgroot /dev/vdb
+    2  lvcreate -L 218G -n lv_root vgroot
+    3  lvs
+    4  mkfs.xfs /dev/vgroot/lv_root
+    5  mount -t xfs /dev/vgroot/lv_root /mnt/
+    6  df -h
+    7  ls -ld /mnt/
+    8  vim /etc/fstab
+/dev/mapper/vgroot-lv_root    /mnt      xfs    defaults        0       0groot
+
+————————————————————————————————————————————————————————————————————————————————————————
+
+# format and mount additional disks
+DEV=/dev/vdb
+DIR=/grid/1
+mkdir -p "$DIR"
+mkfs.ext4 "$DEV"
+mount "$DEV" "$DIR"
+echo "$DEV $DIR ext4 rw,noatime,nodiratime 0 0" >>/etc/fstab
+———————————————————————————————————————————————————————————————————————————————————————————
+select ug.parent_user_group,cr.owner_id ,cr.id creative_id, cr.assets , cr.locale , ct.widget_type from creative cr, creative_template ct , user_group ug
+where cr.creative_template_id = ct.id
+and ct.widget_type='INSTREAM_VIDEO'
+and cr.assets NOT REGEXP concat('.*' , '\"',cr.locale, '\"' ,'.*')
+and ug.id = cr.owner_id;
+
+select * from user_group where id in ('JFSWIUNJITW7' , 'org-LBHAV2UYG8' , 'CY3WKLG9KH03' ,'RPR8BEVRYU70' , '429DW06L9DEW');
+——————————————————————————————————————————————————————————————————————————————————————————

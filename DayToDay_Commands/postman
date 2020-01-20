@@ -1,0 +1,373 @@
+PostMan
+curl -X POST \
+  http://10.47.5.227:80/v1/views/sql \
+  -H 'Postman-Token: d3286f7e-0652-41ec-b193-4bff3a3375cb' \
+  -H 'cache-control: no-cache,no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 1e1f203d-e2fb-613d-55a2-e95c52f2fbce' \
+  -d '{
+ "viewId": "3",
+ "query": "SELECT theme_id  FROM mnm_data_view WHERE timestamp >= '\''2019-06-20T00:00:00+05:30'\'' AND timestamp < '\''2019-06-24T00:00:00+05:30'\'' group by theme_id",
+ "pagingSpec": {
+   "pageOffset": "",
+   "pageSize": "1000"
+ }
+}'
+
+
+curl -X GET \
+  'http://10.32.174.252:7000/v2/metadata/brand_category_info?url=https://www.flipkart.com/all/audio-video/pr?sid=all%2C0pm&p[]=facets.availability%5B%5D=Exclude+Out+of+Stock&fm=neo%2Fmerchandising&iid=M_3873bc5c-eb36-44ee-82c8-ed8c6b45e4f4_3.CWL97M95HZW4&ppt=Homepage&ppn=Homepage&cid=CWL97M95HZW4&p%5B%5D=facets.availability%255B%255D%3DExclude%2BOut%2Bof%2BStock' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 5fd2641e-fa4b-4e3c-b260-b7a50b9a9513' \
+  -H 'accountid: undefined' \
+  -H 'cache-control: no-cache,no-cache' \
+  -H 'csrf: scA8uYj9-a2lwxtMu_XwHrIT5TCASJGz6Bfo' \
+  -H 'orgid: JUKEBOX_FK' \
+  -H 'postman-token: 3d753494-a102-5936-045c-a01cacfd9375' \
+  -H 'teamid: 1019' \
+  -H 'teamname: Mobiles' \
+  -H 'userid: pushkar.anand@flipkart.com' \
+  -H 'x-account-type: MERCHANDISER' \
+  -H 'x-org-id: JUKEBOX_FK' \
+  -H 'x-owner-id: 1019' \
+  -H 'x-user-id: pushkar.anand@flipkart.com' \
+  -H 'x_client_id: ads-ui' \
+  -H 'x_client_ip: ::1' \
+  -H 'x_org_id: JUKEBOX_FK' \
+  -H 'x_owner_id: 1019' \
+  -H 'x_session_id: 2.VI17534181F1C1471787C159F4E3705D31.SI82F153FA60CE4E9ABA907EA0445B1526.VSE8E746D2005D431086FC2CD88AAE2C1E.1553769285' \
+  -H 'x_taint_req: false' \
+  -H 'x_team_id: 1019' \
+  -H 'x_user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/73.0.3683.86 Safari/537.36' \
+  -H 'x_user_id: pushkar.anand@flipkart.com'
+
+
+curl -X GET \
+  http://10.33.14.218:9000/cm3/v2/campaigns/PZRNZ7GWHMNS/BCAP/PAUSE \
+  -H 'Postman-Token: ed831a21-25ad-4b0e-8843-df75ff5b8585' \
+  -H 'X_CLIENT_ID: ‘ads-ui’,' \
+  -H 'X_CLIENT_IP: ‘::1’,' \
+  -H 'X_ORG_ID: ‘org-LBHAV2UYG8’,' \
+  -H 'X_OWNER_ID: ‘LBHAV2UYG8’,' \
+  -H 'X_SESSION_ID: ‘2.VI7604C7FEC8244EC2A4E97823A614EE96.SI5591089D4C6546BB8DE53109244BBB57.VS2F0140C2C45C4BCCAACE11FE70F13B42.1551099059’,' \
+  -H 'X_TAINT_REQ: false' \
+  -H 'X_TEAM_ID: ‘LBHAV2UYG8’,' \
+  -H 'X_USER_AGENT: ‘Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36’,' \
+  -H 'X_USER_ID: ‘pushkar.anand@flipkart.com’,' \
+  -H 'accountId: undefined,' \
+  -H 'cache-control: no-cache' \
+  -H 'csrf: ‘DTIaqXlw-QwyKijPeMTuQ1caGDBLzUM-YPBI’,' \
+  -H 'orgid: ‘org-LBHAV2UYG8’,' \
+  -H 'teamid: ‘LBHAV2UYG8’,' \
+  -H 'teamname: ‘default’,' \
+  -H 'userid: ‘pushkar.anand@flipkart.com’,' \
+  -H '‘Content-Type’: ‘application/json; charset=utf-8’,' \
+  -H '‘X-ACCOUNT-TYPE’: ‘ADVERTISER’,' \
+  -H '‘X-ORG-ID’: ‘org-LBHAV2UYG8’,' \
+  -H '‘X-OWNER-ID’: ‘LBHAV2UYG8’,' \
+  -H '‘X-USER-ID’: ‘pushkar.anand@flipkart.com’,' \
+  -d '{}'
+
+
+curl -X PUT \
+  'http://10.33.14.218:9000/cm3/v2/campaigns/PZRNZ7GWHMNS/BCAP/RESUME?X-OWNER-ID=LBHAV2UYG8&X-USER-ID=pushkar.anand@flipkart.com&X-ORG-ID=org-LBHAV2UYG8&X_CLIENT_ID=ads-ui&X_CLIENT_IP=::1' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: cb4df5a4-dbc0-4353-bcfe-21e0853c1915' \
+  -H 'cache-control: no-cache' \
+  -d '{}'
+
+
+curl -X POST \
+  http://localhost:7000/v2/publishers/view_on_slot \
+  -H 'Content-Type: application/json; charset=utf-8' \
+  -H 'Postman-Token: cc18780d-88ce-4d99-9e56-c9c23e3eb7c8,b78324a6-6b62-4142-8569-95a5da57b05c' \
+  -H 'X-ACCOUNT-TYPE: ADVERTISER' \
+  -H 'X-ORG-ID: org-LBHAV2UYG8' \
+  -H 'X-OWNER-ID: LBHAV2UYG8' \
+  -H 'X-USER-ID: pushkar.anand@flipkart.com' \
+  -H 'X_CLIENT_ID: ads-ui' \
+  -H 'X_CLIENT_IP: ::1' \
+  -H 'X_ORG_ID: org-LBHAV2UYG8' \
+  -H 'X_OWNER_ID: LBHAV2UYG8' \
+  -H 'X_SESSION_ID: 2.VI7604C7FEC8244EC2A4E97823A614EE96.SI5591089D4C6546BB8DE53109244BBB57.VS2F0140C2C45C4BCCAACE11FE70F13B42.1551099059' \
+  -H 'X_TAINT_REQ: false' \
+  -H 'X_TEAM_ID: LBHAV2UYG8' \
+  -H 'X_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/72.0.3626.121 Safari/537.36' \
+  -H 'X_USER_ID: pushkar.anand@flipkart.com' \
+  -H 'accountId: undefined' \
+  -H 'cache-control: no-cache,no-cache' \
+  -H 'csrf: qBS9eUfs-J9Daf7aZoCaC_B0dLrtnWuvQWV8' \
+  -H 'orgid: org-LBHAV2UYG8' \
+  -H 'teamid: LBHAV2UYG8' \
+  -H 'teamname: default' \
+  -H 'userid: pushkar.anand@flipkart.com' \
+  -d '[{"pageType":"HOMEPAGE","position":1,"themeView":"ulalala:test2"},{"pageType":"HOMEPAGE","position":2,"themeView":"NotifyMetheme:NotifyMeDesktop"}]'
+
+
+
+curl -X POST \
+  http://localhost:7000/v2/campaigns \
+  -H 'Content-Type: application/json; charset=utf-8' \
+  -H 'Postman-Token: b257a279-0cec-4d97-9a30-b523c46741fe,a6b7f1b2-2bbf-403e-aa38-c196aff6e756' \
+  -H 'X-ACCOUNT-TYPE: ADVERTISER' \
+  -H 'X-ORG-ID: org-LBHAV2UYG8' \
+  -H 'X-OWNER-ID: LBHAV2UYG8' \
+  -H 'X-USER-ID: navendu.sharma2016@gmail.com' \
+  -H 'X_CLIENT_ID: ads-ui' \
+  -H 'X_CLIENT_IP: ::1' \
+  -H 'X_ORG_ID: org-LBHAV2UYG8' \
+  -H 'X_OWNER_ID: LBHAV2UYG8' \
+  -H 'X_SESSION_ID: 2.VI9165BA68678F4E2BBA719529F80EC1E2.SI121CBF9C768A4A2DB81A4039FCA5B396.VS4624C59DBEF643228039727C0D99D916.1554803222' \
+  -H 'X_TAINT_REQ: false' \
+  -H 'X_TEAM_ID: LBHAV2UYG8' \
+  -H 'X_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/73.0.3683.86 Safari/537.36' \
+  -H 'X_USER_ID: navendu.sharma2016@gmail.com' \
+  -H 'accountId: undefined' \
+  -H 'cache-control: no-cache,no-cache' \
+  -H 'csrf: WnUQ3Kuk-Qc6vlqZlrGpB5O-zU1XOpmYjIls' \
+  -H 'orgid: org-LBHAV2UYG8' \
+  -H 'teamid: LBHAV2UYG8' \
+  -H 'teamname: default' \
+  -H 'userid: navendu.sharma2016@gmail.com' \
+  -d '{"lineItemId":"F5JA06OHHX39" ,"name":"test_singh6","objective":"PERFORMANCE","inventorySource":"ONO","budget":24,"budgetCapping":null,"campaignType":"MERCHANDISING","paymentType":"PAID","currency":"INR" , "discount" : null}'
+
+
+
+curl -X POST \
+  http://10.32.182.233:8190/productService/getCustomProductDetails \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 0d1ddd7e-ee83-46c6-a7a1-b9226f040f2b,16b9155c-1e52-4b44-a96b-fdfe1012bbdc' \
+  -H 'X-ACCEPT-LANGUAGE: en' \
+  -H 'X-Flipkart-Client: w3.merch' \
+  -H 'X-Request-ID: 136d618a-f85d-45f4-a5ef-76d86a168dd5' \
+  -H 'cache-control: no-cache,no-cache' \
+  -d '{"ids":["SMPF9HSZYAGDZMVR"],"userContext":null,"channelContext":{"browser":{"family":"","version":null},"os":{"family":"","version":"","versionPopularName":""},"device":{"family":"","type":""},"fkApp":{"type":"Retail","version":null,"platform":"Android","device":"Mobile"},"appDevice":{"manufacturer":"","model":"","id":"","idSupported":false},"model":"","brand":"","appVersion":null,"appName":"Retail","osVersion":""},"locationContext":{"pinCode":-1},"serviceContext":{"orderListings":true,"npsViews":["LISTING_INFO","META_INFO", "BASE_INFO"],"npsServices":["ATHENA","PROMISE","ROL","PNP_DETAILED"],"preferredListingIds":{},"santaContext":{"marketPlaceView":null,"cartContext":null,"landingOfferId":null,"viewTypes":null}}}'
+
+
+curl -X PUT \
+  'http://repo-svc-app-0001.nm.flipkart.com:8080/env/fk-m3-video-processor-prod?appkey=test' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 805ea4d1-5096-4514-a36e-851dc571ee6d' \
+  -H 'cache-control: no-cache' \
+  -d '[
+  {
+    "repoName": "logsvc",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "fk-config-service-confd",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "alertz-nsca-wrapper",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "alertz-nagios-common",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "oracle-java",
+    "repoVersion": 4,
+    "repoReferenceType": "EXACT"
+  },
+  {
+    "repoName": "cosmos-v3",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "fk-m3-ffmpeg",
+    "repoVersion": 1,
+    "repoReferenceType": "HEAD"
+  },
+  {
+    "repoName": "fk-m3-video-processor",
+    "repoVersion": 33,
+    "repoReferenceType": "EXACT"
+  }
+
+]'
+
+
+
+curl -X PUT \
+  http://10.33.82.88:8085/sale/update \
+  -H 'Postman-Token: 7d15a2e3-d21f-4b2f-89ff-3ff501857917' \
+  -H 'cache-control: no-cache,no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 50fa1916-6f2d-91eb-23eb-d5c2bc282ef9' \
+  -d '{
+    "saleId":"EA",
+    "earlyAccessTime":"2019-06-22T20:00:00.000+05:30",
+    "saleTime":"2019-06-25T00:01:00.000+05:30"
+} '
+
+
+curl -X POST "http://10.33.15.101:9200/neo_universal_search_prod/_search?pretty" -H 'Content-Type: application/json' -d '
+{
+  "query": {
+    "bool": {
+      "must": {
+        "term": {
+          "pageId": "homep-produ-6107f"
+        }
+      },
+      "filter": {
+        "term": {
+          "entityType": "page"
+        }
+      }
+    }
+  }
+}'
+
+=========================================================================================================================
+
+curl --location --request POST 'http://localhost:7000/v2/publishers/adsZoneGroup' \
+--header 'Content-Type: application/json' \
+--header 'Postman-Token: cc18780d-88ce-4d99-9e56-c9c23e3eb7c8' \
+--header 'X-ACCOUNT-TYPE: ADVERTISER' \
+--header 'X-ORG-ID: org-LBHAV2UYG8' \
+--header 'X-OWNER-ID: LBHAV2UYG8' \
+--header 'X-USER-ID: pushkar.anand@flipkart.com' \
+--header 'X_CLIENT_ID: ads-ui' \
+--header 'X_CLIENT_IP: ::1' \
+--header 'X_ORG_ID: org-LBHAV2UYG8' \
+--header 'X_OWNER_ID: LBHAV2UYG8' \
+--header 'X_SESSION_ID: 2.VI7604C7FEC8244EC2A4E97823A614EE96.SI5591089D4C6546BB8DE53109244BBB57.VS2F0140C2C45C4BCCAACE11FE70F13B42.1551099059' \
+--header 'X_TAINT_REQ: false' \
+--header 'X_TEAM_ID: LBHAV2UYG8' \
+--header 'X_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/72.0.3626.121 Safari/537.36' \
+--header 'X_USER_ID: pushkar.anand@flipkart.com' \
+--header 'accountId: undefined' \
+--header 'cache-control: no-cache' \
+--header 'csrf: qBS9eUfs-J9Daf7aZoCaC_B0dLrtnWuvQWV8' \
+--header 'orgid: org-LBHAV2UYG8' \
+--header 'teamid: LBHAV2UYG8' \
+--header 'teamname: default' \
+--header 'userid: pushkar.anand@flipkart.com' \
+--data-raw '{
+	"pageType":"HOMEPAGE",
+	"position":10,
+	"themeView":"AlanTheme:viewm2",
+	"zoneCount": 3,
+	"zoneGroupName":"YO-YO-YO",
+	"publisherId": "3PHOT75M10"
+
+}'
+
+=========================================================================================================================
+curl --location --request PUT 'http://localhost:7000/v2/publishers/adsZoneStatus' \
+--header 'Content-Type: application/json; charset=utf-8' \
+--header 'Postman-Token: cc18780d-88ce-4d99-9e56-c9c23e3eb7c8' \
+--header 'X-ACCOUNT-TYPE: ADVERTISER' \
+--header 'X-ORG-ID: org-LBHAV2UYG8' \
+--header 'X-OWNER-ID: LBHAV2UYG8' \
+--header 'X-USER-ID: pushkar.anand@flipkart.com' \
+--header 'X_CLIENT_ID: ads-ui' \
+--header 'X_CLIENT_IP: ::1' \
+--header 'X_ORG_ID: org-LBHAV2UYG8' \
+--header 'X_OWNER_ID: LBHAV2UYG8' \
+--header 'X_SESSION_ID: 2.VI7604C7FEC8244EC2A4E97823A614EE96.SI5591089D4C6546BB8DE53109244BBB57.VS2F0140C2C45C4BCCAACE11FE70F13B42.1551099059' \
+--header 'X_TAINT_REQ: false' \
+--header 'X_TEAM_ID: LBHAV2UYG8' \
+--header 'X_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/72.0.3626.121 Safari/537.36' \
+--header 'X_USER_ID: pushkar.anand@flipkart.com' \
+--header 'accountId: undefined' \
+--header 'cache-control: no-cache' \
+--header 'csrf: qBS9eUfs-J9Daf7aZoCaC_B0dLrtnWuvQWV8' \
+--header 'orgid: org-LBHAV2UYG8' \
+--header 'teamid: LBHAV2UYG8' \
+--header 'teamname: default' \
+--header 'userid: pushkar.anand@flipkart.com' \
+--data-raw '{"zoneGroupId": "XXXXX", "ActiveZoneCount": 1}'
+========================================================================================================================
+TARGETING
+
+curl --location --request GET 'http://10.33.118.185:19090/targeting/view/25495538102693888/view-audiences' \
+--header 'Accept: */*' \
+--header 'Cache-Control: no-cache' \
+--header 'Connection: keep-alive' \
+--header 'Content-Type: application/json' \
+--header 'Host: 10.32.150.41:19090' \
+--header 'Postman-Token: bd4f75c6-efa2-414d-b0cd-b7643cf1c09c,a77aea86-e499-4a26-b739-64b05cdba73b' \
+--header 'User-Agent: PostmanRuntime/7.13.0' \
+--header 'X_ORG_ID: CRM' \
+--header 'X_TEAM_ID: CRM_TEAM' \
+--header 'X_USER_ID: tarun.jindal' \
+--header 'accept-encoding: gzip, deflate' \
+--header 'cache-control: no-cache' \
+--header 'x-account-type: MARKETER'
+
+========================================================================================================================
+SHERLOCK
+
+curl --location --request GET 'http://10.32.174.252:7000/v2/metadata/stores' \
+--header 'Accept: */*' \
+--header 'Accept-Encoding: gzip, deflate' \
+--header 'Connection: keep-alive' \
+--header 'Content-Type: application/json' \
+--header 'Host: 10.32.174.252:7000' \
+--header 'Postman-Token: c3c02370-5c5c-4b1e-98e3-a64692a0eaa4' \
+--header 'User-Agent: PostmanRuntime/7.20.1' \
+--header 'accountid: undefined' \
+--header 'cache-control: no-cache,no-cache' \
+--header 'csrf: scA8uYj9-a2lwxtMu_XwHrIT5TCASJGz6Bfo' \
+--header 'orgid: JUKEBOX_FK' \
+--header 'postman-token: 3d753494-a102-5936-045c-a01cacfd9375' \
+--header 'teamid: 1019' \
+--header 'teamname: Mobiles' \
+--header 'userid: pushkar.anand@flipkart.com' \
+--header 'x-account-type: MERCHANDISER' \
+--header 'x-org-id: JUKEBOX_FK' \
+--header 'x-owner-id: 1019' \
+--header 'x-user-id: pushkar.anand@flipkart.com' \
+--header 'x_client_id: ads-ui' \
+--header 'x_client_ip: ::1' \
+--header 'x_org_id: JUKEBOX_FK' \
+--header 'x_owner_id: 1019' \
+--header 'x_session_id: 2.VI17534181F1C1471787C159F4E3705D31.SI82F153FA60CE4E9ABA907EA0445B1526.VSE8E746D2005D431086FC2CD88AAE2C1E.1553769285' \
+--header 'x_taint_req: false' \
+--header 'x_team_id: 1019' \
+--header 'x_user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/73.0.3683.86 Safari/537.36' \
+--header 'x_user_id: pushkar.anand@flipkart.com'
+
+========================================================================================================================
+BCAP
+
+curl --location --request GET 'http://10.33.14.218:9000/cm3/v2/campaigns/PZRNZ7GWHMNS/BCAP/PAUSE' \
+--header '‘Content-Type’:  ‘application/json; charset=utf-8’,' \
+--header 'csrf:  ‘DTIaqXlw-QwyKijPeMTuQ1caGDBLzUM-YPBI’,' \
+--header 'accountId:  undefined,' \
+--header 'userid:  ‘pushkar.anand@flipkart.com’,' \
+--header 'orgid:  ‘org-LBHAV2UYG8’,' \
+--header 'teamid:  ‘LBHAV2UYG8’,' \
+--header 'teamname:  ‘default’,' \
+--header '‘X-USER-ID’:  ‘pushkar.anand@flipkart.com’,' \
+--header '‘X-ORG-ID’:  ‘org-LBHAV2UYG8’,' \
+--header '‘X-OWNER-ID’:  ‘LBHAV2UYG8’,' \
+--header 'X_USER_ID:  ‘pushkar.anand@flipkart.com’,' \
+--header 'X_ORG_ID:  ‘org-LBHAV2UYG8’,' \
+--header 'X_TEAM_ID:  ‘LBHAV2UYG8’,' \
+--header 'X_OWNER_ID:  ‘LBHAV2UYG8’,' \
+--header '‘X-ACCOUNT-TYPE’:  ‘ADVERTISER’,' \
+--header 'X_CLIENT_ID:  ‘ads-ui’,' \
+--header 'X_CLIENT_IP:  ‘::1’,' \
+--header 'X_USER_AGENT:  ‘Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36’,' \
+--header 'X_SESSION_ID:  ‘2.VI7604C7FEC8244EC2A4E97823A614EE96.SI5591089D4C6546BB8DE53109244BBB57.VS2F0140C2C45C4BCCAACE11FE70F13B42.1551099059’,' \
+--header 'X_TAINT_REQ:  false' \
+--data-raw '{}'
+========================================================================================================================
+Alertz
+
+curl --location --request GET 'http://10.47.1.196/iaas/?%26cmd%3Dredirect%26arubalp%3D12345#/apps/m3-cm/instances' \
+--header 'X-USER-ID: 1234' \
+--header 'X-OWNER-ID: 45632' \
+--header 'X-ORG-ID: 45235'
+========================================================================================================================
+

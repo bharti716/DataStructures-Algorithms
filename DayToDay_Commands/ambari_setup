@@ -1,0 +1,45 @@
+    Ambari SetUp Details
+
+    example for UI reference - http://10.32.234.73:8080/#/main/hosts/prod-hawk-hbase-zk1-1402745/summary
+    http://10.34.161.98/HDP/debian9/3.0.1.0-187/
+    http://10.34.161.98/HDP-UTILS/debian9/1.1.0.22/
+    Select local repo
+
+    HST CLIENT INSTALL ERROR
+    /var/lib/ambari-server/resources/stacks/HDP/3.0/services/SMARTSENSE/metainfo.xml
+    Remove - <selection>MANDATORY</selection>
+
+    Ambari Test
+    1) m3-ambari-hostname-test : config bucket for hostname
+    2) demand-ambari-test-env : config bucket for ambari env
+    3) java home not set in deb9 ? - /usr/lib/jvm/oracle-java8-jdk-amd64
+    4) scp bharti.singh@10.33.198.3:/var/lib/ambari-server/resource/Ambari-DDL-MySQL-CREATE.sql .
+    5) sudo hostnamectl set-hostname host.example.com
+    6) set up locale before running ambari agent
+    LANG=en_US
+    LANGUAGE=en_IN:en
+
+    modified that file - /etc/locale.gen manually and uncommented the locales that I wanted, then locale-gen started working properly:
+    sudo locale-gen
+    restart macine
+    run locale -a
+
+    CREATE USER 'ambari'@'%' IDENTIFIED BY 'ambari';
+
+    GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'%';
+
+    CREATE USER 'ambari'@'localhost' IDENTIFIED BY 'ambari';
+
+    GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'localhost';
+
+    CREATE USER 'ambari'@'%' IDENTIFIED BY 'ambari';
+
+    GRANT ALL PRIVILEGES ON *.* TO 'ambari'@'ambari';
+
+    FLUSH PRIVILEGES;
+
+    create database ambari ;
+
+    Config buckets
+    demand-ambari-test-env
+    m3-ambari-hostname-test

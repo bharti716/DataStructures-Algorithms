@@ -1,0 +1,195 @@
+HANDY COMMANDS
+mvn clean install sonar:sonar -Denv=nm -Dsonar.jdbc.url=“jdbc:mysql://http://10.85.163.13:3306/sonar” -Dsonar.jdbc.username=sonar -Dsonar.jdbc.password=sonar -Dsonar.host.url=http://10.85.163.13:9000 -Pcoverage-per-test -Dsonar.jacoco.reportPath=target/jacoco.exec
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+mvn dependency:tree | grep -i --color jackson
+brew services start zookeeper
+brew services list
+SELECT table_schema AS "Database", ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS "Size (MB)"  FROM information_schema.TABLES  GROUP BY table_schema;
+/usr/share/fk-ad-azkaban/web_server/azkaban-web-server-3.39.0-17-g7b7833aa/conf/azkaban.properties
+ps -A --sort -rss -o comm,pmem | head -n 11
+
+
+
+dpkg-deb -b deb
+tail -f /var/log/flipkart/mm/fk-mm-hazelcast/app.log |grep queue
+awk  ‘{ print $2,$1 }’ test | sed ‘s/^/\“/g’ | sed ‘s/$/\“\,/g’ | sed ‘s/ /\:/g’
+echo “1431689566 x.y.z 1.000000 mytag=myvalue” | /usr/bin/cosmos
+GET  -  10.47.0.149:80/fk-alert-service/teams/mnm-demand/scheduledRules/AckLatencyBannerSpout
+POST - 10.47.0.149:80/fk-alert-service/teams/m3-demand/scheduledRules
+
+/etc/sv/nagios_CreateActiveCheck_daemon/run
+
+cat /usr/lib/nagios/fk-nagios-common/thresholds/system_alerts.conf
+vi /usr/lib/nagios/fk-nagios-mysql/thresholds/mysql_alerts.conf
+
+sh /usr/local/Cellar/zookeeper/3.4.13/bin/zkCli
+sh /usr/lib/zookeeper/bin/zkCli.sh
+bash zkServer.sh  start
+sudo apt-get install netcat
+echo stat | nc localhost 2181
+
+
+watch -n 2 ls -lrth
+lvresize --size 6G /dev/vgmysql/lv_mysqltmp
+/usr/bin/zookeeper-client
+/usr/lib/zookeeper/bin bash zkCli.sh
+pgrep -lf ssh
+mysqld --initialize-insecure (before running this delete files from /var/lib/mysql)
+sudo apt-cache search mysql
+
+show grants for root@'10.%';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.%' identified by 'KayajC9s';
+flush privileges;
+SET PASSWORD FOR ‘root’@‘localhost' = PASSWORD('KayajC9s');
+FLUSH PRIVILEGES;
+
+mysql_upgrade -u root -p
+mysqladmin -uroot shutdown -p
+show grants for replication@'10.%';
+GRANT REPLICATION SLAVE ON *.* TO 'replication'@'10.%' IDENTIFIED BY 'dessert';
+show  VARIABLES LIKE 'server_id';
+set global server_id=1340028;
+
+/etc/init.d/mysql stop
+/etc/init.d/mysql start
+nohup mysqldump  --max_allowed_packet=512M  -h 10.34.169.71  --all-databases --master-data=2 --single-transaction -u root  -pKayajC9s > prod_all_databases.sql 2> dump.err &
+nohup mysql --max_allowed_packet=512M  -h10.33.130.254 -uroot -pKayajC9s  < preprod_all_databases.sql &
+CHANGE MASTER TO MASTER_HOST='10.34.169.71', MASTER_USER='replication', MASTER_PASSWORD='dessert', MASTER_LOG_FILE ='m3-demand-infra-cm-mysql-prod-d8-1054221-bin.000267', MASTER_LOG_POS=616460105
+scp -i private.rsa bharti.singh@10.32.83.76:/var/lib/mysql/prod_all_databases.sql /var/lib/mysql
+
+mysql_upgrade -u root -p
+service mysqld restart
+UPDATE user SET Host='10.%' WHERE Host='10.33.231.14' AND User='fk_admin';
+SELECT * FROM information_schema.PROCESSLIST AS p WHERE p.COMMAND = 'Binlog Dump' ;
+
+
+Create database rundeck ;
+CREATE user ‘root’@’172.%’ IDENTIFIED by ‘KayajC9s’ ;
+grant all on rundeck.* to ‘pla’@’10.%' IDENTIFIED by ‘plateam'  ;
+
+CREATE user ‘audience_rw’@’10.%' IDENTIFIED by ‘audience_rw@123' ;
+grant insert, delete, update on m3_audience.* to ‘audience_rw’@’10.%' IDENTIFIED by ‘audience_rw@123'  ;
+
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 killall
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 submit-all
+
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Meta-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Accumulator-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Product-Collection-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Business-Zone-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Serviceability-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Banner-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin killtimeout 30 Ingestion-Offer-MT
+
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Meta-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Accumulator-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Product-Collection-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Business-Zone-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Serviceability-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Banner-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Ingestion-Offer-MT
+sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Search-Ingestion
+
+
+Tunneling - DB Connect
+ssh -f <any Ip you have bastion ssh access to> -L <unused-local-port>:<remote-database-host>:<remote-db-port> -N
+$ ssh -f 10.34.134.195 -L 3309:10.32.197.8:3306 -N
+Example - ssh -f 10.33.10.193 -L 12488:10.33.170.18:3306 -N
+
+
+python -m pip install --user boto3
+python -m pip install zc.zk   -t ./
+
+du —max-depth=1 . -h
+du -shx ./* | sort -rh | head
+du -sh ./*
+lsof -nP | grep '(deleted)'
+
+show partitions mnm_fact_served;
+select * from mnm_fact_served where y=2019 and m=03 and d=01 and h=00 and hh=00 limit 1;
+show create table mnm_fact_served;
+hdfs dfs -ls hdfs://krios/projects/ads/network/platform/processed/facts-data/bi-hourly/partitioned/mnm-fact/in/t=s/
+hdfs dfs -ls hdfs://arjuna/projects/ads/network/platform/processed/facts-data/bi-hourly/partitioned/mnm-fact/in/t=s/y=2019/
+
+hdfs dfs -copyToLocal hdfs://krios/projects/fk-ads-supply/fk-ads-forecasting/output/spark-2.1/spark-2.1.1 .
+copy folder to /usr/share/
+cd sbin
+sudo bash ./start-slave.sh spark://10.33.22.76:7077
+
+sudo mysqlbinlog --no-defaults   m3-demand-infra-cm-mysql-prod-d8-1054221-bin.000387  --base64-output=DECODE-ROWS --verbose  > filtered_data.txt
+./pt-query-digest mysql-slow.log> mysql-slow-log-output.txt
+——————————————————————————————————————————————————————————————————————————————————————
+
+Steps to switch. master and make the only slave the new maater
+1) check following variables should have same value
+	binlog_format , log_bin should be ON
+2) stop write on master
+3) read_only=off
+4) Make sure all slaves replication lags are caught up
+5) STOP SLAVE; RESET SLAVE All;
+6) update cnfig bucket (cm , layout service , am_updated)
+7) restart cm
+8) update preprod config in ingestion code
+————————————————————————————————————————————————————————————————————————————————————————
+zless product-service.log | grep "Exception" | wc -l
+
+project = m3demand AND labels = created-by-jemh AND updated > 2019-07-29 AND updated < 2019-08-05 AND status not in (resolved)
+———————————————————————————————————————————————————————————————————————————————————————
+Unix Commands
+
+1) awk 'NR==FNR{a[$0];next}!($0 in a)' file1 file2 > file3 — lines in file2 not in file 1
+
+2) awk '!x[$1]++ { print $1 }' file1 > file2  — removing duplicates from file1 and writing in file2
+
+3) sed "s/\(.*\)/'\1'/" file1 | tr '\n' ',' > file2 -  converts a list of values in coloums to rows separated by comma's and in individual single quotes . Eg to use in sql
+————————————————————————————————————————————————————————————————————————————————————————
+INTELLIJ IDEA LISCENCE
+http://intellijidea.fkinternal.com:8080/licenseServer/
+
+double shift in  intellij and write lic
+then click on manage licence
+———————————————————————————————————————————————————————————————————————————————————————
+
+cat /etc/default/megh/env_var
+ls -lrth /dev/
+ls -lrth /dev/vdb
+ls -lrth /dev/sdb
+sudo rm -rf /home/bad_user/directory_with_<wbr />lots_of_empty_files
+———————————————————————————————————————————————————————————————————————————————————————
+cd /usr/lib/x86_64-linux-gnu/
+sudo ln -s libstatgrab.so.10.0.0 libstatgrab.so.6
+sudo svc -t /etc/sv/cosmos-collectd
+tail -F /var/log/cosmos-collectd/current
+————————————————————————————————————————————————————————————————————————————————
+echo stat | nc localhost 2181
+bash start-slave.sh spark://10.32.197.180:7077
+./sbin/start-slave.sh spark://http://10.32.197.180:8080/
+
+——————————————————————————————————————————————————————————————————————————————————
+Sonar
+sh /Applications/SonarQube/bin/macosx-universal-64/sonar.sh console
+mvn clean jacoco:prepare-agent install sonar:sonar
+http://localhost:9000/dashboard?id=MyProjectKey
+————————————————————————————————————————————————————————————————————————————————————————
+pigz --best -k testing
+————————————————————————————————————————————————————————————————————————————————————
+
+./artcli create --store MAVEN --packagename <group:artifact> --version <version> --transitive_dependencies true --external_download_url http://repo1.maven.org/maven2/
+
+———————————————————————————————————————————————————————————————————————————————————————
+Kafka Commands
+bin/kafka-topics.sh --create --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181 --replication-factor 1 --partitions 1 --topic vendorMaptest
+bin/kafka-topics.sh --list --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181
+bin/hbase-connectors-daemon.sh start kafkaproxy -a -e -p localhost -b localhost:9092
+
+/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-topics.sh --create --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181 --replication-factor 1 --partitions 1 --topic mykafkatopic
+/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-topics.sh --list --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181
+/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-console-consumer.sh --bootstrap-server 10.33.74.218:9092 --from-beginning --topic mykafkatopic
+
+
+create 'mytable', 'mycf'
+
+put 'mytable', 'row1', 'mycf:key', 'key1'
+put 'mytable', 'row1', 'mycf:value', 'value_1d'
+-----------------------------------------------------------------------------------------------------------------------
+

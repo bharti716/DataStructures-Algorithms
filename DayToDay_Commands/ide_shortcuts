@@ -1,0 +1,39 @@
+IDE/TOOL SHORTCUTS
+
+Eclipse shortcuts
+1. ctrl+cmd+//  -> /* multiline comment */
+2. sysout and Ctrl+Space
+3. Mac OS X(switching between tabs in eclipse editor):
+       Fn+Cntrl+↑
+       Fn+Cntrl+↓
+Formats code - CTRL + SHIFT + F
+command+o  : method search in a class
+cmd+shift : text selection
+F3 : directly to method definition from cursor placed at call
+cmd+shift+f - auto format
+cmd+shift+l = keycap
+Ctrl + 1 for quick fix
+
+
+Intellij
+cntrl+cmd+l = code format
+mvn clean install -U
+mvn clean idea:idea
+Shortcuts
+1.  fn+cmd+left arrow/right arrow : start and end of file
+2. ⌃Y Delete current line
+3. shift+alt + left arrow/right arrow Select previous/next word
+4. Cmd + F12  - structure pop up
+5.
+
+
+iTerm2
+1. cmd-d and cmd-shift-d divide an existing session vertically or horizontally
+2. navigate among split panes with cmd-opt-arrow or cmd-[ and cmd-].
+3. Autocomplete -  press cmd-;
+4. access paste history with cmd-shift-H
+End the search at current history entry	Ctrl + Y
+Cmd  + enter - maximise window
+
+
+

@@ -1,0 +1,8 @@
+Docker Commands
+1. sh push_to_registry.sh bharti_test
+2. docker network rm stl_default
+3. sudo docker stack deploy --compose-file SpoutCleanupDocker_Env_PreprodHZ.yml cleanupenv
+4. docker stack services cleanupenv
+5. docker service logs --follow cleanupenv_topology
+6. sh push_to_registry.sh bharti_zone 10.33.94.203:4000
+7. sudo docker node ls (master - 10.32.161.74)
