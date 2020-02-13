@@ -1,0 +1,9 @@
+{
+  "demand":{
+    "appid":"m3-demand-nps",
+    "host_bucket" :"",
+    "groups": {
+      "hosts" : []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+
+- hosts: all
+  vars:
+   - environment: "{{ lookup('env','env') }}"
+  vars_files:
+    - "vars/{{ environment }}.yml"
+  sudo: yes
+  roles:
+    - role: common

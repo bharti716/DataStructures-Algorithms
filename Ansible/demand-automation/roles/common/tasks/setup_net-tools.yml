@@ -1,0 +1,43 @@
+#- name: install net-tools
+#  command: apt-get install net-tools --allow-unauthenticated -y
+#  register: result
+#  tags:
+#    - setup_node
+#  - debug:
+#      msg: "it changed"
+#      when: result is changed
+
+- name: replace team name for nagios/system alerts
+  shell: echo "team_name=m3-ingestion" > /etc/default/nsca_wrapper
+  tags:
+      - setup_node
+
+#- name: Deleting nagios alerts
+#  shell: echo {{ ansible_default_ipv4.address }} > /home/bharti.singh/test
+#  tags:
+#      - setup_node
+
+- name: For Mitigating Jessie Repo Error
+  shell: echo "Acquire::Check-Valid-Until "false";" >> /etc/apt/apt.conf.d/70debconf
+  tags:
+      - setup_node
+
+- name: upgdating apt
+  command: apt-get update
+  tags:
+      - setup_node
+
+- name: Installing python-requests module
+  command: apt-get install python-requests --allow-unauthenticated -y
+  tags:
+      - setup_node
+
+
+- name: Deleting nagios alerts
+  script: ./scripts/deleteNagiosAlerts.py {{ ansible_hostname }}
+  args:
+      executable: python2
+  tags:
+      - setup_node
+
+
