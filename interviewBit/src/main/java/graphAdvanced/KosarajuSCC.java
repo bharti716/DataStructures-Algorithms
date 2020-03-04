@@ -74,15 +74,18 @@ public class KosarajuSCC {
                 fillOrder(i, visited, stack);
 
         KosarajuSCC revGraph = getTranspose();
-
+        int count = 0 ;
         while (!stack.empty()) {
 
             int v = stack.pop();
             if (!revGraph.visited[v]) {
                 revGraph.dfs(revGraph.visited, v);
                 System.out.println();
+                count++ ;
             }
         }
+        System.out.println( "result is - " + count);
+
     }
 
     public static void main(String[] args) {

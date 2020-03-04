@@ -7,8 +7,13 @@ brew services list
 SELECT table_schema AS "Database", ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS "Size (MB)"  FROM information_schema.TABLES  GROUP BY table_schema;
 /usr/share/fk-ad-azkaban/web_server/azkaban-web-server-3.39.0-17-g7b7833aa/conf/azkaban.properties
 ps -A --sort -rss -o comm,pmem | head -n 11
+sh /usr/lib/zookeeper/bin/zkCli.sh
+/etc/default/megh/instance_metadata.json 
 
 
+export env=demand
+ansible-playbook -i inventory/inventory.py playbook.yml --tags=setup_node
+logrotate -vf /etc/logrotate.conf
 
 dpkg-deb -b deb
 tail -f /var/log/flipkart/mm/fk-mm-hazelcast/app.log |grep queue
@@ -119,17 +124,6 @@ sudo bash ./start-slave.sh spark://10.33.22.76:7077
 sudo mysqlbinlog --no-defaults   m3-demand-infra-cm-mysql-prod-d8-1054221-bin.000387  --base64-output=DECODE-ROWS --verbose  > filtered_data.txt
 ./pt-query-digest mysql-slow.log> mysql-slow-log-output.txt
 ——————————————————————————————————————————————————————————————————————————————————————
-
-Steps to switch. master and make the only slave the new maater
-1) check following variables should have same value
-	binlog_format , log_bin should be ON
-2) stop write on master
-3) read_only=off
-4) Make sure all slaves replication lags are caught up
-5) STOP SLAVE; RESET SLAVE All;
-6) update cnfig bucket (cm , layout service , am_updated)
-7) restart cm
-8) update preprod config in ingestion code
 ————————————————————————————————————————————————————————————————————————————————————————
 zless product-service.log | grep "Exception" | wc -l
 
@@ -176,20 +170,10 @@ pigz --best -k testing
 
 ./artcli create --store MAVEN --packagename <group:artifact> --version <version> --transitive_dependencies true --external_download_url http://repo1.maven.org/maven2/
 
-———————————————————————————————————————————————————————————————————————————————————————
-Kafka Commands
-bin/kafka-topics.sh --create --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181 --replication-factor 1 --partitions 1 --topic vendorMaptest
-bin/kafka-topics.sh --list --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181
-bin/hbase-connectors-daemon.sh start kafkaproxy -a -e -p localhost -b localhost:9092
+mvn clean  deploy
 
-/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-topics.sh --create --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181 --replication-factor 1 --partitions 1 --topic mykafkatopic
-/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-topics.sh --list --zookeeper 10.32.66.138:2181,10.33.102.244:2181,10.34.85.27:2181
-/usr/local/Cellar/kafka/2.3.0/libexec/bin/kafka-console-consumer.sh --bootstrap-server 10.33.74.218:9092 --from-beginning --topic mykafkatopic
+/usr/share/fk-ad-azkaban/web_server/azkaban-web-server-3.39.0-17-g7b7833aa/conf/azkaban.properties
+sudo bash /usr/share/fk-ad-azkaban/web_server/azkaban-web-server-3.39.0-17-g7b7833aa/bin/azkaban-web-start.sh
 
-
-create 'mytable', 'mycf'
-
-put 'mytable', 'row1', 'mycf:key', 'key1'
-put 'mytable', 'row1', 'mycf:value', 'value_1d'
------------------------------------------------------------------------------------------------------------------------
-
+/usr/share/fk-ad-azkaban/exec_server/azkaban-exec-server-3.39.0-17-g7b7833aa/conf/azkaban.properties
+sudo bash /usr/share/fk-ad-azkaban/exec_server/azkaban-exec-server-3.39.0-17-g7b7833aa/bin/azkaban-executor-start.sh

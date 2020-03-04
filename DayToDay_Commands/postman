@@ -371,3 +371,83 @@ curl --location --request GET 'http://10.47.1.196/iaas/?%26cmd%3Dredirect%26arub
 --header 'X-ORG-ID: 45235'
 ========================================================================================================================
 
+Sherlock
+
+curl --location --request GET 'http://10.47.1.159:25290/sherlock/stores/osp/mba/o3t/drt/products?select.substores=off&products.type=listing&geoBrowse=enabled&facets.discount_range_v1%5B%5D=50%25+or+more&facets.price_range.from=500&facets.price_range.to=Max&facets.serviceability%5B%5D=true&facets.availability%5B%5D=Exclude+Out+of+Stock&eligibleBenefits=EASale&locale=en&relaxVernacularCheck=false%22' \
+--header 'X-Flipkart-Client: Neo' \
+--header 'Content-Type: application/json' \
+--header 'X-DOMAIN: FLIPKART' \
+--header 'X-MARKETPLACE-CONTEXT: FLIPKART' \
+--header 'X-SERVICEABLE-MARKETPLACES: FLIPKART'
+
+curl --location --request POST 'http://10.47.6.51:25290/sherlock/v1/iterator' \
+--header 'Content-Type: application/json' \
+--header 'Postman-Token: d36a1195-e9da-4b12-b74d-e3ef172e77a6' \
+--header 'X-DOMAIN: FLIPKART' \
+--header 'X-Flipkart-Client: Neo' \
+--header 'X-MARKETPLACE-CONTEXT: FLIPKART' \
+--header 'X-SERVICEABLE-MARKETPLACES: FLIPKART' \
+--data-raw '{
+	"storePath" : "osp/mba/o3t/drt",
+	"FacetContext": {
+		"appliedFacets": [
+			{
+				"name": "discount_range_v1",
+				"type": "LIST",
+				"values": ["50%25 or more"]
+			},
+			{
+				"name": "availability",
+				"type": "LIST",
+				"values": ["Exclude Out of Stock"]
+			},
+			{
+				"name": "price_range",
+				"type": "RANGE",
+				"from": "500",
+				"to": "Max"
+			},
+			{
+			"name": "serviceability",
+			"type": "LIST",
+			"values": ["true"]
+			}
+
+	  ]
+	},
+	"userContext": {
+		"lockinUserContext": {
+			"lockinUserState": {
+				"eligibleBenefits": ["EASALE"]
+			}
+		}
+	}
+
+}'
+
+
+curl --location --request POST 'http://10.47.6.51:25290/sherlock/v1/iterator' \
+--header 'Content-Type: application/json' \
+--header 'Postman-Token: d36a1195-e9da-4b12-b74d-e3ef172e77a6' \
+--header 'X-DOMAIN: FLIPKART' \
+--header 'X-Flipkart-Client: Neo' \
+--header 'X-MARKETPLACE-CONTEXT: FLIPKART' \
+--header 'X-SERVICEABLE-MARKETPLACES: FLIPKART' \
+--data-raw '{
+	"storePath" : "j9e/abm/52j",
+	"facetContext": {
+		"appliedFacets": [
+			{
+				"name": "type",
+				"type": "LIST",
+				"values": ["TOWER", "OPPO"]
+			},
+			{
+				"name": "availability",
+				"type": "LIST",
+				"values": ["Exclude Out of Stock"]
+			}
+
+	  ]
+	}
+}'
