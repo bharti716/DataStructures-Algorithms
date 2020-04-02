@@ -1,0 +1,10 @@
+*.class
+.idea/
+.vagrant/
+*.iml
+target/
+*.jar
+*.war
+*.ear
+*.ipr
+*.iws
