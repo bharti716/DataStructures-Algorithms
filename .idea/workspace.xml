@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/amazon/src/AnalyzeUserWebsiteVisitPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/DesignSearchAutocompleteSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/DesignTicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/FileSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/MinimumCosttoConnectSticks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/NumberOfDistinctIslands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amazon/src/PathWithMaximumMinimumValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/facebook/src/SnakesAndLadders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/ClosestBinarySearchTreeValueII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/FactorCombinations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/FindLeavesOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/MaxStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/MissingRanges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/NestedListWeightSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/NestedListWeightSumII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/PaintHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/RangeSumQuery2DMutable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/ShortestWordDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/ShortestWordDistanceII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linkedIn/src/WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkedIn/src/LfuCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,29 +26,6 @@
               <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberOfDistinctIslands.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/src/NumberOfDistinctIslands.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileSystem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/src/FileSystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="20" lean-forward="true" selection-end-line="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-                <element signature="e#1388#1389#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,11 +58,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordLadder.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordLadder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linkedIn/src/WordLadder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordLadderII.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linkedIn/src/WordLadderII.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LRUCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linkedIn/src/LRUCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -123,17 +97,25 @@
       <file leaf-file-name="BoundaryofBinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="-356">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinimumCosttoConnectSticks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amazon/src/MinimumCosttoConnectSticks.java">
+      <file leaf-file-name="LfuCache.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linkedIn/src/LfuCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="-927">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/google/src/TwoSum.java" />
-        <option value="$PROJECT_DIR$/google/src/TextJustification.java" />
-        <option value="$PROJECT_DIR$/google/src/readBuffer.java" />
         <option value="$PROJECT_DIR$/google/src/CountCompleteTreeNodes.java" />
         <option value="$PROJECT_DIR$/google/src/BullsAndCows.java" />
         <option value="$PROJECT_DIR$/google/src/MaximalSquare.java" />
@@ -196,7 +175,6 @@
         <option value="$PROJECT_DIR$/facebook/src/ConvertBinarySearchTreeToSortedDoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/facebook/src/SnakesAndLadders.java" />
         <option value="$PROJECT_DIR$/amazon/src/DesignSearchAutocompleteSystem.java" />
-        <option value="$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/MaxStack.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/FindLeavesOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/NestedListWeightSumII.java" />
@@ -217,6 +195,10 @@
         <option value="$PROJECT_DIR$/amazon/src/FileSystem.java" />
         <option value="$PROJECT_DIR$/amazon/src/DesignTicTacToe.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/WordLadder.java" />
+        <option value="$PROJECT_DIR$/linkedIn/src/WordLadderII.java" />
+        <option value="$PROJECT_DIR$/linkedIn/src/LRUCache.java" />
+        <option value="$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java" />
+        <option value="$PROJECT_DIR$/linkedIn/src/LfuCache.java" />
       </list>
     </option>
   </component>
@@ -487,16 +469,15 @@
       <workItem from="1586435838203" duration="23000" />
       <workItem from="1586446372238" duration="817000" />
       <workItem from="1586494405121" duration="8000" />
-      <workItem from="1586534136427" duration="12969000" />
+      <workItem from="1586534136427" duration="13905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32060000" />
+    <option name="totallyTimeSpent" value="32996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -543,36 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/google/src/OptimalAccountBalancing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google/src/TextJustification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="18" column="73" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google/src/StringTransformIntoAnother.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/google/src/SubRectangularMatrixWithMaximumSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -880,20 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/DesignSearchAutocompleteSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/amazon/src/AnalyzeUserWebsiteVisitPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -927,8 +864,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linkedIn/src/WordLadder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linkedIn/src/WordLadderII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/DesignSearchAutocompleteSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/amazon/src/BoundaryofBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linkedIn/src/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linkedIn/src/LfuCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-927">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
