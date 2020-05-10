@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/amazon/amazon.iml" filepath="$PROJECT_DIR$/amazon/amazon.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/google/google.iml" filepath="$PROJECT_DIR$/google/google.iml" />
-      <module fileurl="file://$PROJECT_DIR$/interviewBit/interviewBit.iml" filepath="$PROJECT_DIR$/interviewBit/interviewBit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interviewBit/leetcode.iml" filepath="$PROJECT_DIR$/interviewBit/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/linkedIn/linkedIn.iml" filepath="$PROJECT_DIR$/linkedIn/linkedIn.iml" />
       <module fileurl="file://$PROJECT_DIR$/python_utility/python_utility.iml" filepath="$PROJECT_DIR$/python_utility/python_utility.iml" />
     </modules>

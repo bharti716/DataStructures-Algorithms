@@ -109,6 +109,7 @@ public class ArticulationPoints {
             int v = itr.next();
 
             if(!visited[v]){
+                b_parent[v] = u ;
                 bridgeUtil(b_dis,b_low,b_parent,visited,v);
 
                 b_low[u] = Math.min(b_low[u],b_low[v]);
