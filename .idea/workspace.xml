@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/interviewBit/src/main/java/hard/KthSmallestSumOfAMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SystemDesign/SystemDesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SystemDesign/SystemDesign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SystemDesign/src/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/SystemDesign/src/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google/google.iml" beforeDir="false" afterPath="$PROJECT_DIR$/google/google.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google/src/MinimumWindowSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/google/src/MinimumWindowSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewBit/interviewBit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/ArticulationPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviewBit/src/main/java/graphAdvanced/ArticulationPoints.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewBit/src/main/java/trappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviewBit/src/main/java/trappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewBit/target/classes/graphAdvanced/ArticulationPoints.class" beforeDir="false" afterPath="$PROJECT_DIR$/interviewBit/target/classes/graphAdvanced/ArticulationPoints.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewBit/target/classes/string/PhoneNumCombination$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/interviewBit/target/classes/string/PhoneNumCombination$Solution.class" afterDir="false" />
-    </list>
+    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +73,11 @@
       <file leaf-file-name="trappingRainWater.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trappingRainWater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state relative-caret-position="290">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -514,16 +503,15 @@
       <workItem from="1587138049503" duration="1734000" />
       <workItem from="1587391305024" duration="1201000" />
       <workItem from="1587488990829" duration="11613000" />
-      <workItem from="1588506203484" duration="8023000" />
+      <workItem from="1588506203484" duration="8370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57126000" />
+    <option name="totallyTimeSpent" value="57473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -543,9 +531,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2678788" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2678788" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34424242" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34424242" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25822604" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -939,8 +927,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/trappingRainWater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="290">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

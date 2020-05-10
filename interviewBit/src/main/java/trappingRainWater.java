@@ -2,39 +2,34 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class trappingRainWater {
-    // function to find the trapped water in between buildings
-    // arr: input array
-    // n: size of array
-    static int trappingWater(int arr[], int n) {
 
-        int left_max = 0 ;
-        int high = n-1 ;
-        int low = 0 ;
-        int right_max = 0 ;
-        int result = 0 ;
-        while( low < high){
-            if( arr[low] < arr[high]) {
-                if (left_max < arr[low]) {
-                    left_max = arr[low];
+    static int trappingWater(int arr[], int N) {
 
-                } else
-                    result += (left_max - arr[low]);
-                low++ ;
+        int n = arr.length;
+        if(n < 3) return 0 ;
+
+        int lmax = arr[0];
+        int rmax = arr[n-1];
+        int total_water = 0 ;
+
+        int i = 0 ;
+        int j = n-1 ;
+
+        while(i <= j){
+
+            lmax = Math.max(lmax , arr[i]);
+            rmax = Math.max(rmax , arr[j]);
+            if(lmax >= rmax){
+                total_water += (rmax - arr[j]);
+                j = j - 1 ;
             }
-            else{
-                if( right_max < arr[high]){
-                    right_max = arr[high];
-                }
-                else{
-                    result  = result + (right_max - arr[high]);
-                }
-                high-- ;
+            else {
+                total_water += (lmax - arr[i]);
+                i = i + 1 ;
             }
-
         }
 
-
-        return result;
+        return total_water ;
     }
 
     public int trap(int[] height) {
