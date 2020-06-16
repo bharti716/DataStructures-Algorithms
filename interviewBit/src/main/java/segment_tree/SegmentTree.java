@@ -11,7 +11,7 @@ public class SegmentTree {
         int max ;
         int min ;
 
-        public InfoTrio(int sum, int max, int min) {
+        InfoTrio(int sum, int max, int min) {
             this.sum = sum;
             this.max = max;
             this.min = min;
