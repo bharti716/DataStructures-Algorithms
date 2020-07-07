@@ -29,10 +29,10 @@ public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
             right = _right;
         }
     }
-    Node first = null;
-    Node last = null;
+    private Node first = null;
+    private Node last = null;
 
-    public void helper(Node node) {
+    private void helper(Node node) {
         if (node != null) {
             // left
             helper(node.left);

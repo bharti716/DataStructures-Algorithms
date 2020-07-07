@@ -29,7 +29,7 @@ public class FlattenMultilevelDoublyLinkedList {
     }
 
     /* return the tail of the flatten list */
-    public Node flattenDFS(Node prev, Node curr) {
+    private Node flattenDFS(Node prev, Node curr) {
         if (curr == null) return prev;
         curr.prev = prev;
         prev.next = curr;
