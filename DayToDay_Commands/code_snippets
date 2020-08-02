@@ -45,57 +45,43 @@ SELECT
 
 ———————————————————————————————————————————————————————————————————————————————
 
-@Test
-public void getBanner() throws Exception {
-    ConfigParser<TopologyConfig> parser = new ConfigParser<>(TopologyConfig.class);
-    TopologyConfig topologyConfigproduction = parser.parseConfiguration("config/prod/config.yaml");
+private static Map<String, BigDecimal> getCMBudgetManagerData(Set<String> cmIds) throws IOException {
 
-    HazelcastInstance hazelcastInstance = HazelcastClient.newHazelcastClient(topologyConfigproduction.getHazelcastConfig().getHazelcastInstanceConfig());
-    IMap<String, Banner> map = hazelcastInstance.getMap("bannerMap");
+        String url = "http://10.47.7.30/v1/bm/campaigns/budget";
+        ObjectMapper objectMapper = new ObjectMapper();
+        List<BudgetResponse> budgetInfoList = new ArrayList<>();
+        BudgetRequest budgetRequest = new BudgetRequest(Lists.newArrayList(cmIds));
+        CloseableHttpClient httpclient = HttpClients.createDefault();
+        HttpPost postMethod = new HttpPost(url);
+        addHeaders(postMethod);
+        String entityStr = objectMapper.writeValueAsString(budgetRequest);
+        postMethod.setEntity(new StringEntity(entityStr, ContentType.APPLICATION_JSON));
+        HttpResponse response = httpclient.execute(postMethod);
 
-    long start = System.currentTimeMillis();
+        if (response != null && (response.getStatusLine().getStatusCode() == 200 || response.getStatusLine().getStatusCode() == 204)
+                && response.getEntity().getContent() != null) {
+            budgetInfoList = objectMapper.readValue(response.getEntity().getContent(), new TypeReference<List<BudgetResponse>>() {
+            });
+        }
+        return transform(budgetInfoList);
 
-    long total = map.keySet()
-            .parallelStream()
-            .filter(id -> {
-                Banner banner = map.get(id);
-                if (null != banner) {
-                    return banner.getDomain() == Domain.EMERALD;
-                }
-                return false;
-            })
-            .count();
-
-    long end = System.currentTimeMillis();
-    System.out.println("Total count is :" + total + " took " + (end - start) + "ms");
-}
-
-——————————————————————————————————————————————————————————————————————————————————
-
-private static List<CompletableFuture<Pair<String, Long>>> prepareMapCountCompletableFutureList(ExecutorService executorService, HazelcastInstance hazelcastInstance, Long timestamp) {
-    IMap<String, BaseEntity> mapName;
-    List<CompletableFuture<Pair<String, Long>>> pendingResults = new ArrayList<>();
-
-
-    for (HazelcastMaps hazelcastMap : HazelcastMaps.values()) {
-        final String projectionName = hazelcastMap.getProjectionName() ;
-        System.out.println("Prod Map : " + projectionName + " Size : " + hazelcastInstance.getMap(hazelcastMap.getProjectionName()).size());
-
-        mapName = hazelcastInstance.getMap(hazelcastMap.getProjectionName()) ;
-
-        Future<Pair<String, Long>> submit = executorService.submit(new HazelcastMapLookUpCallableTask(mapName, timestamp, projectionName));
-        CompletableFuture<Pair<String, Long>> pendingAction = CompletableFuture.supplyAsync(() -> {
-            try {
-                return submit.get();
-            } catch (Exception e) {
-                e.printStackTrace();
-                return new Pair<>(projectionName, -1L);
-            }
-        });
-        pendingResults.add(pendingAction);
     }
-    return pendingResults;
-}
+
+    private static Map<String, BigDecimal> transform(List<BudgetResponse> infoList) {
+        if (CollectionUtils.isEmpty(infoList)) {
+            return new HashMap<>();
+        }
+
+        return infoList.stream().collect(Collectors
+                .toMap(BudgetResponse::getCampaignId, BudgetResponse::getTotalBudget));
+    }
+
+    private static void addHeaders(HttpPost httpRequest) {
+        httpRequest.addHeader("X-Flipkart-Client", "Merch");
+        httpRequest.addHeader("X-Request-Host", localHostName);
+        httpRequest.addHeader("X-Request-ID", UUID.randomUUID().toString());
+        httpRequest.addHeader("Accept", MediaType.APPLICATION_JSON);
+    }
 
 ——————————————————————————————————————————————————————————————————————————————————————————
 

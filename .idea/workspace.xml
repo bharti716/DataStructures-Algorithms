@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kristal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kristal/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DayToDay_Commands/code_snippets" beforeDir="false" afterPath="$PROJECT_DIR$/DayToDay_Commands/code_snippets" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <ignored path="$PROJECT_DIR$/kristal/target/" />
@@ -20,42 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cycleInDirected.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/cycleInDirected.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cycleInUnDirected.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/cycleInUnDirected.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fibBottomUp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/fibBottomUp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eggDrop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/eggDrop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="minJumps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/minJumps.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,11 +54,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stepsByKnight.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stepsByKnight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="563">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitCommands" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/gitCommands">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="commands" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/commands">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dockerCommands" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code_snippets" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/code_snippets">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -104,8 +98,8 @@
       <file leaf-file-name="SnakesAndLadders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/facebook/src/SnakesAndLadders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+            <state relative-caret-position="374">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,9 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/facebook/src/LongestSubstringwithAtMostKDistinctCharacters.java" />
-        <option value="$PROJECT_DIR$/facebook/src/SnakesAndLadders.java" />
-        <option value="$PROJECT_DIR$/amazon/src/DesignSearchAutocompleteSystem.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/MaxStack.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/FindLeavesOfBinaryTree.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/NestedListWeightSumII.java" />
@@ -212,6 +203,9 @@
         <option value="$PROJECT_DIR$/kristal/src/main/java/practice/x.java" />
         <option value="$PROJECT_DIR$/kristal/src/main/java/practice/Test9.java" />
         <option value="$PROJECT_DIR$/kristal/pom.xml" />
+        <option value="$PROJECT_DIR$/DayToDay_Commands/commands" />
+        <option value="$PROJECT_DIR$/DayToDay_Commands/dockerCommands" />
+        <option value="$PROJECT_DIR$/DayToDay_Commands/code_snippets" />
       </list>
     </option>
   </component>
@@ -241,7 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,131 +245,14 @@
             <path>
               <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="facebook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="facebook" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic_Programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graphAdvanced" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="interviewBit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="heaps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="linkedIn" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="DayToDay_Commands" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -642,46 +518,48 @@
       <workItem from="1595144006548" duration="433000" />
       <workItem from="1595243779111" duration="2135000" />
       <workItem from="1595356536341" duration="2658000" />
+      <workItem from="1596384187076" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88969000" />
+    <option name="totallyTimeSpent" value="89240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32959327" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32959327" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2678788" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4169697" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4169697" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,34 +588,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToDLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/TreeToCDDL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/BtreeFromInoderPostorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="1" selection-start-line="2" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/BtreeFromPreorderPostorder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -794,10 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39236">
           <caret line="2377" column="22" selection-start-line="2377" selection-start-column="22" selection-end-line="2377" selection-end-column="22" />
-          <folding>
-            <element signature="e#111724#111725#0" expanded="true" />
-            <element signature="e#111781#111782#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,10 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#123#124#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/eggDrop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
@@ -1044,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/facebook/src/SnakesAndLadders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="25" column="49" lean-forward="true" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+        <state relative-caret-position="374">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1055,7 +894,31 @@
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/gitCommands">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/commands">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/code_snippets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
