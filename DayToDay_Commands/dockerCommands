@@ -1,8 +1,99 @@
 Docker Commands
-1. sh push_to_registry.sh bharti_test
-2. docker network rm stl_default
-3. sudo docker stack deploy --compose-file SpoutCleanupDocker_Env_PreprodHZ.yml cleanupenv
-4. docker stack services cleanupenv
-5. docker service logs --follow cleanupenv_topology
-6. sh push_to_registry.sh bharti_zone 10.33.94.203:4000
-7. sudo docker node ls (master - 10.32.161.74)
+
+1. sh push_to_registry.sh phase2_vernc_bharti 10.47.7.214
+2. sudo docker stack services cleanupenv
+3. sudo docker service logs --follow vernc_bharti_topology
+4. sudo docker node ls (master - 10.32.161.74)
+5. sudo docker service update --force vernc_bharti_topology
+6. sudo docker service scale vernc_bharti_topology=0   sudo docker service scale vernc_bharti_topology=10
+7. sudo docker service update --publish-add 7648:6629 <SERVICE-ID>
+8. sudo docker service update --force <service name>
+9. sudo docker stack deploy -c /home/mayank.mundada/adminer.yml adminer
+	watch sudo docker stack ps adminer --no-trunc
+
+
+ingestionV1
+1. sudo docker stack deploy -c vernacular_crm.yml phase2_vernc_bharti
+2. sudo docker stack services vernc_bharti
+3. sudo docker stack ps  vernc_bharti
+4. sudo docker stack ps  --no-trunc vernc_bharti
+5. sudo docker pull 10.47.7.214/topology:vernc_bharti
+6. Sudo docker images
+7. sudo docker run -t --name vernc_bharti a2cfb471b120
+8. sudo docker ps ; sudo docker exec -it 50d994e5864a bash
+    1. sudo docker ps
+    2. sudo docker exec -it 50d994e5864a bash
+
+In local
+1. DockerFile
+2. Docker build .
+3. docker rmi -f fd484f19954f
+4. docker run -t --name vernc_bharti_1  d9246d6ee84e
+
+
+—————————————————————————————————————————————————————————————————————
+
+FROM 10.47.7.214/base-image:latest
+#RUN apt-get install -y ffmpeg
+ADD docker/config.yml  /docker/config.yml
+RUN mkdir -p /tmp/wxh /tmp/1440x560 /tmp/720x280 /tmp/360x140 /tmp/672x720 /tmp/336x360 /tmp/168x180 /tmp/480x512 /tmp/240x256 /tmp/120x128
+ADD m3-cm-api/target/m3-cm-api-1.0-SNAPSHOT.jar /app.jar
+RUN java -cp .:/Stencil.jar stencil.Generate -p docker/config.yml
+EXPOSE 7000
+EXPOSE 7001
+ENTRYPOINT java -cp :/Stencil.jar stencil.Fill -p docker/config.yml.vm && java -jar /app.jar server /docker/config.yml
+
+—————————————————————————————————————————————————————————————————————————
+
+#!/usr/bin/env bash
+set -e
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied"
+    exit -1
+fi
+if [ -z "$1" ]
+  then
+    echo "Please provide the image tag"
+    exit -1
+fi
+
+mvn clean install -DskipTests
+tag="$1"
+app="m3-cm"
+registry=$2
+docker build -t ${app}:${tag} .
+if [ ! -z "$2" ]
+  then
+    image_name=${registry}/${app}:${tag}
+    docker tag ${app}:${tag} ${image_name}
+    docker  push ${image_name}
+  else
+    echo "Please provide the registry host:ip if you want to push to a docker registry."
+fi
+
+—————————————————————————————————————————————————————————————————————————————————
+
+vagrant up
+vagrant ssh
+sudo service aerospike start
+sudo service amc start
+
+vagrant halt
+
+
+ docker run -tid --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 aerospike/aerospike-server
+docker run -d -p 3181:2181 -p 60000:60000 -p 60010:60010 -p 60020:60020 -p 60030:60030 -h hbase harisekhon/hbase
+create 'bannerMap', 'data', {NAME => 'data', REPLICATION_SCOPE => '1'}, {NUMREGIONS => 2, SPLITALGO => 'HexStringSplit'}
+/Users/bharti.singh/astrid/infra/kafka_2.12-2.5.0/bin/kafka-topics.sh --create --zookeeper 127.0.0.1:2181/astrid-kafka --replication-factor 1 --partitions 1 --topic bannerMap
+/Users/bharti.singh/astrid/infra/kafka_2.12-2.5.0/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092  --topic demandIngestion.CreativeBanner  --from-beginning --max-messages 5
+/Users/bharti.singh/astrid/infra/kafka_2.12-2.5.0/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092  --topic demandIngestion.CreativeBanner  --from-beginning --max-messages 5
+/Users/bharti.singh/astrid/infra/kafka_2.12-2.5.0/bin/kafka-topics.sh --list --zookeeper localhost:2181/astrid-kafka
+
+docker swarm init
+docker stack deploy -c aerospike.yml aerospike
+docker stack services aerospike
+docker stack rm aerospike
+docker run -tid --name aerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 10.47.7.214/aerospike/aerospike-server:4.5.2.2
+
+

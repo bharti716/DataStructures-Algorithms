@@ -1,7 +1,11 @@
 HANDY COMMANDS
+
+https://mumomniflip.fkinternal.com/google
+mvn clean install -pl autocontent-adapter  -am -DskipTests
 mvn clean install sonar:sonar -Denv=nm -Dsonar.jdbc.url=“jdbc:mysql://http://10.85.163.13:3306/sonar” -Dsonar.jdbc.username=sonar -Dsonar.jdbc.password=sonar -Dsonar.host.url=http://10.85.163.13:9000 -Pcoverage-per-test -Dsonar.jacoco.reportPath=target/jacoco.exec
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 mvn dependency:tree | grep -i --color jackson
+mvn dependency:purge-local-repository -DactTransitively=false -Dskip=true
 brew services start zookeeper
 brew services list
 SELECT table_schema AS "Database", ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS "Size (MB)"  FROM information_schema.TABLES  GROUP BY table_schema;
@@ -9,7 +13,10 @@ SELECT table_schema AS "Database", ROUND(SUM(data_length + index_length) / 1024 
 ps -A --sort -rss -o comm,pmem | head -n 11
 sh /usr/lib/zookeeper/bin/zkCli.sh
 /etc/default/megh/instance_metadata.json 
-
+sudo nohup python -m SimpleHTTPServer 90
+sudo find / -xdev -type f -size +100M
+sudo netstat -tulpn | grep LISTEN
+sudo lsof -i -P -n | grep LISTEN
 
 export env=demand
 ansible-playbook -i inventory/inventory.py playbook.yml --tags=setup_node
@@ -21,6 +28,7 @@ awk  ‘{ print $2,$1 }’ test | sed ‘s/^/\“/g’ | sed ‘s/$/\“\,/g’ 
 echo “1431689566 x.y.z 1.000000 mytag=myvalue” | /usr/bin/cosmos
 GET  -  10.47.0.149:80/fk-alert-service/teams/mnm-demand/scheduledRules/AckLatencyBannerSpout
 POST - 10.47.0.149:80/fk-alert-service/teams/m3-demand/scheduledRules
+mvn clean idea:idea install -U
 
 /etc/sv/nagios_CreateActiveCheck_daemon/run
 
@@ -46,6 +54,7 @@ show grants for root@'10.%';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.%' identified by 'KayajC9s';
 flush privileges;
 SET PASSWORD FOR ‘root’@‘localhost' = PASSWORD('KayajC9s');
+UPDATE mysql.user SET Password=PASSWORD('root') WHERE User='root';
 FLUSH PRIVILEGES;
 
 mysql_upgrade -u root -p
@@ -98,11 +107,14 @@ sudo /usr/share/fk-mm-ingestion-mt/bin/fk-mm-ingestion-admin submit  Search-Inge
 
 Tunneling - DB Connect
 ssh -f <any Ip you have bastion ssh access to> -L <unused-local-port>:<remote-database-host>:<remote-db-port> -N
-$ ssh -f 10.34.134.195 -L 3309:10.32.197.8:3306 -N
+$ ssh -f 10.34.134.195 -L 3309:10.33.130.254:3306 -N
 Example - ssh -f 10.33.10.193 -L 12488:10.33.170.18:3306 -N
 
 
 python -m pip install --user boto3
+Python -m pip install —user MySQL-python
+python -m pip install --user happybase
+pip install happybase
 python -m pip install zc.zk   -t ./
 
 du —max-depth=1 . -h
@@ -113,8 +125,6 @@ lsof -nP | grep '(deleted)'
 show partitions mnm_fact_served;
 select * from mnm_fact_served where y=2019 and m=03 and d=01 and h=00 and hh=00 limit 1;
 show create table mnm_fact_served;
-hdfs dfs -ls hdfs://krios/projects/ads/network/platform/processed/facts-data/bi-hourly/partitioned/mnm-fact/in/t=s/
-hdfs dfs -ls hdfs://arjuna/projects/ads/network/platform/processed/facts-data/bi-hourly/partitioned/mnm-fact/in/t=s/y=2019/
 
 hdfs dfs -copyToLocal hdfs://krios/projects/fk-ads-supply/fk-ads-forecasting/output/spark-2.1/spark-2.1.1 .
 copy folder to /usr/share/
@@ -155,14 +165,12 @@ sudo ln -s libstatgrab.so.10.0.0 libstatgrab.so.6
 sudo svc -t /etc/sv/cosmos-collectd
 tail -F /var/log/cosmos-collectd/current
 ————————————————————————————————————————————————————————————————————————————————
-echo stat | nc localhost 2181
-bash start-slave.sh spark://10.32.197.180:7077
-./sbin/start-slave.sh spark://http://10.32.197.180:8080/
 
 ——————————————————————————————————————————————————————————————————————————————————
 Sonar
 sh /Applications/SonarQube/bin/macosx-universal-64/sonar.sh console
 mvn clean jacoco:prepare-agent install sonar:sonar
+./gradlew build sonarqube -Dsonar.host.url=http://10.47.100.7 -Dsonar.jacoco.reportPath=target/jacoco.exec
 http://localhost:9000/dashboard?id=MyProjectKey
 ————————————————————————————————————————————————————————————————————————————————————————
 pigz --best -k testing
@@ -177,3 +185,26 @@ sudo bash /usr/share/fk-ad-azkaban/web_server/azkaban-web-server-3.39.0-17-g7b78
 
 /usr/share/fk-ad-azkaban/exec_server/azkaban-exec-server-3.39.0-17-g7b7833aa/conf/azkaban.properties
 sudo bash /usr/share/fk-ad-azkaban/exec_server/azkaban-exec-server-3.39.0-17-g7b7833aa/bin/azkaban-executor-start.sh
+———————————————————————————————————————————————————————————————————————————————————————
+start=5m-ago&m=sum:fk-ad-statse.jmx.statse.com.flipkart.mnm.demand.hazelcast.backup.server.count.gauge.Value
+start=5m-ago&m=sum:fk-ad-statse.jmx.statse.com.flipkart.mnm.demand.hazelcast.backup.server.count.gauge.Value
+————————————————————————————————————————————————————————————————————————————————————————————
+http://10.47.3.62/#/list-keys/fk-mnm-demand-search-prod
+
+chown elasticsearch:elasticsearch /grid/vdb/es
+
+curl -X PUT "http://10.33.15.101:9200/_cluster/settings?pretty" -H 'Content-Type: application/json' -d'
+{
+    "transient" : {
+        "cluster.routing.allocation.exclude._ip" : "10.32.239.58"
+    }
+}
+'
+—————————————————————————————————————————————————————————————————————————————————————————
+topology/config/test/config.yaml local Ingestion-Meta-MT
+server /Users/bharti.singh/bs_project/ads-nw-demand-aggregator/hazelcast-server/config/local/hazelcast-server-local.yaml
+
+sudo apt-get install python-pip
+sudo pip install -i http://10.47.3.13/artifactory/v1.0/artifacts/pypi --trusted-host 10.47.3.13 ansible
+ansible-playbook --private-key=./private_key -u admin-at -i inventory/inventory setup_node.yml --tags=setup_node
+———————————————————————————————————————————————————————————————————————————————————————————
