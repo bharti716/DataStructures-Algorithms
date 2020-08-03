@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/DayToDay_Commands/code_snippets" beforeDir="false" afterPath="$PROJECT_DIR$/DayToDay_Commands/code_snippets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cci/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <ignored path="$PROJECT_DIR$/kristal/target/" />
+    <ignored path="$PROJECT_DIR$/cci/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="minJumps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/minJumps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="waysToReachNthStair.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToReachNthStair.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,7 +53,7 @@
       <file leaf-file-name="stepsByKnight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
+            <state relative-caret-position="884">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
@@ -72,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/DayToDay_Commands/commands">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+              <caret line="2" column="41" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -80,19 +76,24 @@
       <file leaf-file-name="dockerCommands" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="1649">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_snippets" pinned="false" current-in-tab="true">
+      <file leaf-file-name="code_snippets" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DayToDay_Commands/code_snippets">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="1411">
+              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cci/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="SnakesAndLadders.java" pinned="false" current-in-tab="false">
@@ -235,6 +236,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,14 +248,33 @@
             <path>
               <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="DayToDay_Commands" type="462c0819:PsiDirectoryNode" />
+              <item name="cci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="cci" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="cci" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="cci" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -518,16 +540,16 @@
       <workItem from="1595144006548" duration="433000" />
       <workItem from="1595243779111" duration="2135000" />
       <workItem from="1595356536341" duration="2658000" />
-      <workItem from="1596384187076" duration="271000" />
+      <workItem from="1596384187076" duration="1026000" />
+      <workItem from="1596392025033" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89240000" />
+    <option name="totallyTimeSpent" value="90149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -540,10 +562,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2678788" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4169697" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4167832" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -588,13 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/tree/BtreeFromPreorderPostorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kristal.AI/practice/A.java" />
     <entry file="file://$PROJECT_DIR$/kristal.AI/practice/B.java" />
     <entry file="file://$PROJECT_DIR$/kristal/src/main/java/demo/DemoApplication.java" />
@@ -893,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
+        <state relative-caret-position="884">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
@@ -904,23 +919,26 @@
     <entry file="file://$PROJECT_DIR$/DayToDay_Commands/commands">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
+          <caret line="2" column="41" selection-start-line="2" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="1649">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DayToDay_Commands/code_snippets">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="1411">
+          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cci/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

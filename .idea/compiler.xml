@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cci" />
         <module name="kristal" />
         <module name="leetcode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cci" target="1.5" />
       <module name="kristal" target="1.8" />
       <module name="leetcode" target="8" />
     </bytecodeTargetLevel>
