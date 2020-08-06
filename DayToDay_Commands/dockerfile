@@ -1,0 +1,9 @@
+FROM 10.47.7.214/base-image:latest
+#RUN apt-get install -y ffmpeg
+ADD docker/config.yml  /docker/config.yml
+RUN mkdir -p /tmp/wxh /tmp/1440x560 /tmp/720x280 /tmp/360x140 /tmp/672x720 /tmp/336x360 /tmp/168x180 /tmp/480x512 /tmp/240x256 /tmp/120x128
+ADD m3-cm-api/target/m3-cm-api-1.0-SNAPSHOT.jar /app.jar
+RUN java -cp .:/Stencil.jar stencil.Generate -p docker/config.yml
+EXPOSE 7000
+EXPOSE 7001
+ENTRYPOINT java -cp :/Stencil.jar stencil.Fill -p docker/config.yml.vm && java -jar /app.jar server /docker/config.yml
