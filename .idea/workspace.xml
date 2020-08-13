@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/DayToDay_Commands/push_to_registry.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DayToDay_Commands/postman" beforeDir="false" afterPath="$PROJECT_DIR$/DayToDay_Commands/TaskList" afterDir="false" />
-    </list>
+    <list default="true" id="d4775e21-9c24-4413-8ee6-4ccc7d37e22f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/interviewBit/target/" />
     <ignored path="$PROJECT_DIR$/kristal/target/" />
     <ignored path="$PROJECT_DIR$/cci/target/" />
@@ -21,18 +17,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stepsByKnight.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/graphs/stepsByKnight.java">
+      <file leaf-file-name="waysToReachNthStair.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToReachNthStair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gitCommands" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/gitCommands">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="waysToReachNthStair2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/waysToReachNthStair2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="commands" pinned="false" current-in-tab="false">
@@ -58,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="push_to_registry.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="push_to_registry.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DayToDay_Commands/push_to_registry.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="441">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dockerfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -76,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code_snippets" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/code_snippets">
+      <file leaf-file-name="d42-cli" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DayToDay_Commands/d42-cli">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="1320">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -88,18 +97,6 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cci/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="SnakesAndLadders.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/facebook/src/SnakesAndLadders.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -150,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/linkedIn/src/NestedListWeightSumII.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/NestedListWeightSum.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/ClosestBinarySearchTreeValueII.java" />
         <option value="$PROJECT_DIR$/linkedIn/src/PaintHouse.java" />
@@ -201,6 +197,7 @@
         <option value="$PROJECT_DIR$/DayToDay_Commands/code_snippets" />
         <option value="$PROJECT_DIR$/DayToDay_Commands/postman" />
         <option value="$PROJECT_DIR$/DayToDay_Commands/push_to_registry.sh" />
+        <option value="$PROJECT_DIR$/DayToDay_Commands/d42-cli" />
       </list>
     </option>
   </component>
@@ -238,11 +235,6 @@
             <path>
               <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructures-Algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="Ansible" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructures-Algorithms" type="b2602c69:ProjectViewProjectNode" />
@@ -524,7 +516,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91292000" />
+    <option name="totallyTimeSpent" value="91519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -541,10 +533,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2678788" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36121213" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36121213" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -554,13 +546,37 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26180258" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32959327" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36121213" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2678788" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32848486" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -589,20 +605,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/sorting/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/dynamic_Programming/kadanes1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interviewBit/src/main/java/binarySearchTree/PrintCommonNodes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11">
@@ -876,9 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,13 +901,6 @@
     <entry file="file://$PROJECT_DIR$/cci/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DayToDay_Commands/commands">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -929,7 +921,28 @@
     <entry file="file://$PROJECT_DIR$/DayToDay_Commands/push_to_registry.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/dockerCommands">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DayToDay_Commands/d42-cli">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
