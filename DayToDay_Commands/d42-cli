@@ -1,0 +1,80 @@
+# Ref : https://docs.google.com/document/d/1B08yhj2J8Ip-nMATj5HY7TJ5XDKX9j6VrXfgUBFYXQA/edit#
+# Please use this service judiciously.
+# For copying from local to d42, use below commands for setup
+# brew install s3cmd
+# ./d42-cli configure
+# Example:
+# $ ./d42-cli cp test.csv test.csv
+# curl "http://10.47.1.204/fk_public/test.csv?AWSAccessKeyId=VESD24E20Y6SWI38KM8Y&Expires=1594936177&Signature=ouC47hnBCnxDndsAmQPThjjTbpE%3D" --output test.csv
+s3configPath="$HOME/.s3cfg"
+command=$1
+function usage() {
+    echo "Usage"
+    cat << EOF
+    $0 cp | rm | configure
+    Commands :
+    cp srcFilePath destFileName    Copies the specified file from source to flipkart public s3 and creates downloadable URL having expiry
+    rm dest                        Removes the specified file from s3
+    configure                      Create config file
+EOF
+    exit 2
+}
+function configureS3() {
+    cat > $s3configPath << EOF
+access_key = VESD24E20Y6SWI38KM8Y
+secret_key = KES5OUZbGXo9IcdxMZKWyUZQTC38S9LLQlbbUcOo
+default_mime_type = application/xml
+enable_multipart = True
+encoding = ISO-8859-1
+encrypt = False
+follow_symlinks = False
+force = False
+get_continue = False
+guess_mime_type = True
+host_base = 10.47.1.204
+host_bucket = 10.47.1.204
+human_readable_sizes = False
+invalidate_on_cf = False
+list_md5 = False
+multipart_chunk_size_mb = 128
+preserve_attrs = True
+progress_meter = True
+recursive = False
+recv_chunk = 4096
+reduced_redundancy = False
+send_chunk = 4096
+skip_existing = False
+socket_timeout = 300
+urlencoding_mode = normal
+use_https = False
+EOF
+}
+case $command in
+    cp)
+        if [ $# -lt 3 ]; then
+            usage
+            exit
+        fi
+        LOCAL_FILE=$2
+        REMOTE_FILE=$3
+        if s3cmd -c $s3configPath put $LOCAL_FILE s3://fk_public/$REMOTE_FILE; then
+            downloadUrl=$(s3cmd -c $s3configPath signurl s3://fk_public/$REMOTE_FILE +3600 | sed 's#fk_public.10.47.1.204/#10.47.1.204/fk_public/#g')
+            echo -e "\ncurl \"$downloadUrl\" --output $REMOTE_FILE\n"
+        else
+            [[ $? -ne 0 ]] && echo "Copy failed" && exit 2
+        fi
+        ;;
+    rm)
+        REMOTE_FILE=$2
+        if [ $# -lt 2 ]; then
+            usage
+            exit
+        fi
+        s3cmd -c $s3configPath del s3://fk_public/$REMOTE_FILE
+        echo "Deleted $REMOTE_FILE";;
+    configure)
+        configureS3;;
+    *)
+        usage
+        ;;
+esac
